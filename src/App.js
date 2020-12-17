@@ -16,7 +16,7 @@ function App() {
         <TopBar />
         <UnderBar />
 
-        <Switch>
+        {/* <Switch>
           <Route path="/">
             <Top />
           </Route>
@@ -36,7 +36,7 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
-        </Switch>
+        </Switch> */}
       </Router>
     </div>
   );
