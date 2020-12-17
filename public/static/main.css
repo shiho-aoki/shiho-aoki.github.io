@@ -1,0 +1,14 @@
+body{
+    color: #ffffff;
+    background-color: #000000;
+}
+.header{
+    display: flex;
+
+}
+.content{
+    display: flex;
+}
+.fotter{
+    display: flex;
+}
