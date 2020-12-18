@@ -1,0 +1,17 @@
+.homever{
+    position:fixed;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 280px;
+    padding: 2%;
+}
+
+.link{
+}
+
+.fotter{
+    position: absolute;
+    bottom: 0px;
+    left: 280px;
+}
