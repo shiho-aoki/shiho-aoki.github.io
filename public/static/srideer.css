@@ -1,17 +1,69 @@
 .homever{
     position:fixed;
+    display: block;
     top:0px;
     left:0px;
     height: 100%;
     width: 280px;
-    padding: 2%;
+    padding-left: 2%;
 }
 
-.link{
+.const-name{
+    position: relative;
 }
 
 .fotter{
     position: absolute;
     bottom: 0px;
     left: 280px;
+}
+
+.my-name{
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 100%;
+    height: auto;
+    font-size: 2.5em;
+    z-index: 10;
+}
+.my-name-clo{
+    color: #fff;
+}
+.icon_back{
+    margin: 0px;
+    display:inline-block; 
+    position: absolute;;
+    background: #000000;
+    border-radius:90px;
+    width:90px;
+    height:90px;
+    margin:5px;
+    right:0px;
+}
+.icon{
+    margin: 0px;
+    display:inline-block; 
+    position: absolute;;
+    background:linear-gradient(
+        269.16deg, 
+        #FFE580 -15.83%, 
+        #FF7571 -4.97%, 
+        #FF7270 15.69%, 
+        #EA5DAD 32.43%, 
+        #C2A0FD 50.09%, 
+        #9867F0 67.47%, 
+        #3BF0E4 84.13%, 
+        #33CE43 105.13%, 
+        #B2F4B6 123.24%);
+    width:100px;
+    height:100px;
+    margin:5px;
+    border-radius:90px;
+    right:0px;
+}
+
+.introduction{
+    position: absolute;
+    top: 110px;
 }
