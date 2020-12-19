@@ -6,6 +6,7 @@
     height: 100%;
     width: 280px;
     padding-left: 2%;
+    border-right: solid 1px #333;
 }
 
 .const-name{
@@ -15,7 +16,8 @@
 .fotter{
     position: absolute;
     bottom: 0px;
-    left: 280px;
+    left: 400px;
+    text-align: center;
 }
 
 .my-name{
@@ -66,4 +68,8 @@
 .introduction{
     position: absolute;
     top: 110px;
+}
+.article{
+    position: fixed;
+    bottom: 10px;
 }
