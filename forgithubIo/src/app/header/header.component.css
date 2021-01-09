@@ -1,0 +1,13 @@
+.header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+}
+
+.table_rows{
+    left: 2px;
+}
+
+.add_box{
+    right: 2px;
+}
