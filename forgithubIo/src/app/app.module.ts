@@ -8,12 +8,14 @@ import { WorkComponent } from './work/work.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { RouterModule } from '@angular/router';
+import { HeaderbarComponent } from './headerbar/headerbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutmeComponent,
-    WorkComponent
+    WorkComponent,
+    HeaderbarComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
