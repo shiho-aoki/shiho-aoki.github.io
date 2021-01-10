@@ -1,0 +1,16 @@
+<div class="overview">
+    <h2>Overview</h2>
+    <p>something</p>
+</div>
+
+<div class="anotation">
+    <ul>
+        <li *ngFor="let anotation of anotations">
+            <a href="{{ anotation.link }}">
+                <div><mat-icon>{{ anotation.image }}</mat-icon></div>
+                <h3 class="content_title">{{ anotation.content }}</h3>
+                <span class="content_about">{{ anotation.about }}</span>
+            </a>
+        </li>
+    </ul>
+</div>
