@@ -26,6 +26,11 @@ a{
 } */
 header{
     background-color: whitesmoke;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    margin-top: 0;
+    z-index: 100;
 }
 
 button{
@@ -50,19 +55,15 @@ li{
     font-size: 25px;
 }
 
-.header{
-    position: relative;
-}
-
 
 .header_wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
-    @media (min-width: 660px){
+    @media (min-width: 760px){
         .header_wrapper{
             padding-top: 0;
             padding-bottom: 0;
@@ -72,40 +73,40 @@ li{
         }
     }
 
-@media (min-width: 660px) {
+@media (min-width: 760px) {
     .header_start{
         text-align: center;
     }
 }
 
-@media (min-width: 660px) {
+@media (min-width: 760px) {
     .header_media{
         order: -1;
     }
 }
 
-@media (min-width: 660px){
+@media (min-width: 760px){
     .header_end{
         display: flex;
         justify-content: flex-end;
     }
 }
 
-@media (max-width: 659px) {
+@media (max-width: 759px) {
     .header_end{
         padding-right: 0.6rem;
-        padding-top: 0.1rem;
+        padding-top: 0.5rem;
     }
     .home {
         font-size: 22px;
     }
 }
-@media (min-width: 660px) {
+@media (min-width: 760px) {
     .nav_wrapper{
         display: flex;
     }
 }
-@media (max-width: 659px) {
+@media (max-width: 759px) {
     .nav_wrapper {
         position: absolute;
         top: 100%;
@@ -131,7 +132,7 @@ li{
     display: block;
     padding: 1.5rem 1rem;
 }
-@media (min-width: 660px) {
+@media (min-width: 760px) {
     .nav_item a{
         padding-left: 0;
         padding-right: 0;
@@ -140,7 +141,7 @@ li{
 .nav_toggle {
     display: none;
 }
-@media (max-width: 659px) {
+@media (max-width: 759px) {
     .nav_toggle{
         display: block;
         position: absolute;

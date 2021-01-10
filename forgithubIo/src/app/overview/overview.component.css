@@ -1,6 +1,39 @@
+.home{
+    position: relative;
+    top:7rem;
+}
 .overview{
     margin: 1rem 2rem 2rem 2rem;
     border:solid #000;
+}
+
+.github-status{
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/background.png);
+    background-size: 100%;
+}
+.github-status img{
+    display: block;
+    width:45%;
+    height: auto;
+    margin-left: auto;
+}
+#stats_card{
+    padding-top: 4rem;
+}
+@media (max-width:610px) {
+    .github-status img{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #stats_card{
+        padding-top: 0;
+    }
+    .github-status{
+        background: none;
+    }
 }
 
 .anotation ul{
@@ -44,4 +77,15 @@
 #pin_icon{
     font-size: 20px;
     transform: rotate(20deg);
+}
+.pin_text{
+    font-size: 14px;
+}
+@media (max-width: 610px){
+    #pin_icon{
+        font-size: 16px;
+    }
+    .pin_text{
+        font-size: 11px;
+    }
 }
