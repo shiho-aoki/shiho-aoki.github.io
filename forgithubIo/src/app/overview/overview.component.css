@@ -13,14 +13,21 @@
     background: url(../../assets/background.png);
     background-size: 100%;
 }
+.github-status h2{
+    font-size: 5rem;
+    color: aliceblue;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
 .github-status img{
     display: block;
-    width:45%;
+    width:65%;
     height: auto;
     margin-left: auto;
 }
 #stats_card{
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 @media (max-width:610px) {
     .github-status img{
@@ -33,6 +40,12 @@
     }
     .github-status{
         background: none;
+    }
+    .github-status h2{
+        font-size: initial;
+        color: initial;
+        padding-top: initial;
+        padding-left: initial;
     }
 }
 
