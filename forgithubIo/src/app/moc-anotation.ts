@@ -4,25 +4,21 @@ export const ANOTATIONs: Anotation[] = [
     {
         link: "/about",
         image: "settings_ethernet",
-        content: "About",
-        about: "string"
+        content: "About"
     },
     {
         link: "/work",
         image: "work_outline",
-        content: "Work",
-        about: "string"
+        content: "Work"
     },
     {
         link: "/blog",
         image: "text_snippet",
-        content: "Blog",
-        about: "string"
+        content: "Blog"
     },
     {
         link: "/contact",
         image: "textsms",
-        content: "Contact",
-        about: "string"
+        content: "Contact"
     }
 ];

@@ -1,6 +1,8 @@
 <div class="overview">
-    <h2>Overview</h2>
-    <p>something</p>
+    <div class="overview_content">
+        <h2>Overview</h2>
+        <p>something</p>
+    </div>
 </div>
 
 <div class="anotation">
@@ -9,7 +11,17 @@
             <a href="{{ anotation.link }}">
                 <div><mat-icon>{{ anotation.image }}</mat-icon></div>
                 <h3 class="content_title">{{ anotation.content }}</h3>
-                <span class="content_about">{{ anotation.about }}</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="pinned">
+    <h2>Pinned</h2>
+    <ul>
+        <li *ngFor="let pinned of pinneds">
+            <a href="{{ pinned.path }}" class="pinned_item">
+                {{ pinned.name }}
             </a>
         </li>
     </ul>
