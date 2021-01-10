@@ -9,7 +9,7 @@
     <ul>
         <li *ngFor="let anotation of anotations">
             <a href="{{ anotation.link }}">
-                <div><mat-icon>{{ anotation.image }}</mat-icon></div>
+                <span class="material-icons" id= "image_icon"> {{ anotation.image }} </span>
                 <h3 class="content_title">{{ anotation.content }}</h3>
             </a>
         </li>
@@ -17,10 +17,11 @@
 </div>
 
 <div class="pinned">
-    <h2>Pinned</h2>
     <ul>
+        <h2>Pinned</h2>
         <li *ngFor="let pinned of pinneds">
             <a href="{{ pinned.path }}" class="pinned_item">
+                <span class="material-icons" id="pin_icon">push_pin</span>
                 {{ pinned.name }}
             </a>
         </li>

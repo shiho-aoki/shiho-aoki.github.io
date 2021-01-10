@@ -17,6 +17,9 @@
     width: 20%;
     border: solid #000;
 }
+#image_icon{
+    font-size: 50px;
+}
 
 .pinned{
     margin: 2rem 2rem 2rem 2rem;
@@ -37,4 +40,8 @@
     width: 22%;
     border: solid #000;
     border-radius: 10px;
+}
+#pin_icon{
+    font-size: 20px;
+    transform: rotate(20deg);
 }
