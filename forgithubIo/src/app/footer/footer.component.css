@@ -31,6 +31,10 @@ footer ul{
     width: 20%;
 }
 
+.nav_item a{
+    color: whitesmoke;
+}
+
 .copyright{
     text-align: center;
 }

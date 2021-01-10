@@ -1,5 +1,8 @@
 .home{
     position: relative;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
     top:7rem;
 }
 @media (max-width: 759px) {
@@ -8,8 +11,8 @@
     }
 }
 .overview{
-    margin: 1rem 2rem 2rem 2rem;
-    border:solid #000;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .github-status{
@@ -20,7 +23,7 @@
 }
 .github-status h2{
     font-size: 5rem;
-    color: aliceblue;
+    color: whitesmoke;
     padding-top: 2rem;
     padding-left: 2rem;
 }
@@ -53,8 +56,8 @@
         background: none;
     }
     .github-status h2{
-        font-size: initial;
-        color: initial;
+        font-size: 24px;
+        text-align: center;
         padding-top: initial;
         padding-left: initial;
     }
@@ -72,10 +75,15 @@
     /*design box*/
     padding-top: 2%;
     width: 20%;
-    border: solid #000;
+    border: solid whitesmoke;
 }
+.content_title{
+    color: whitesmoke;
+}
+
 #image_icon{
     font-size: 50px;
+    color: whitesmoke;
 }
 
 .pinned{
@@ -95,15 +103,17 @@
     padding-top: 2%;
     padding-bottom: 2%;
     width: 22%;
-    border: solid #000;
+    border: solid whitesmoke;
     border-radius: 10px;
 }
 #pin_icon{
     font-size: 20px;
     transform: rotate(20deg);
+    color: whitesmoke;
 }
 .pin_text{
     font-size: 14px;
+    color:whitesmoke;
 }
 @media (max-width: 610px){
     #pin_icon{
