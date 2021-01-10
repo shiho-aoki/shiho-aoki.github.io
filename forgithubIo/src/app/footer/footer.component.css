@@ -11,6 +11,11 @@
     font-size: 1.5rem;
     padding-right: 1.5rem;
 }
+@media (max-width: 450px) {
+    .name{
+        font-size: 1rem;
+    }
+}
 
 .link_item{
     padding-right: 0.7rem;

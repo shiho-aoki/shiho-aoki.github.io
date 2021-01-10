@@ -2,6 +2,11 @@
     position: relative;
     top:7rem;
 }
+@media (max-width: 759px) {
+    .home{
+        top: 4rem;
+    }
+}
 .overview{
     margin: 1rem 2rem 2rem 2rem;
     border:solid #000;
@@ -40,6 +45,9 @@
     }
     #stats_card{
         padding-top: 0;
+    }
+    .overview{
+        border: none;
     }
     .github-status{
         background: none;
@@ -103,5 +111,22 @@
     }
     .pin_text{
         font-size: 11px;
+    }
+}
+@media (max-width: 450px){
+    .pinned ul li {
+        width: 100%;
+        margin-left: 0px;
+        text-align: left;
+        margin-bottom: 0.7rem;
+    }
+    .pinned_item{
+        padding-left: 36%;
+    }
+    #pin_icon{
+        font-size: 20px;
+    }
+    .pin_text{
+        font-size: 14px;
     }
 }
