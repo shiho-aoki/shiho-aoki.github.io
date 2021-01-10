@@ -25,6 +25,9 @@
     width:65%;
     height: auto;
     margin-left: auto;
+    margin-top: 2%;
+    margin-right: 2%;
+    padding-bottom: 2%;
 }
 #stats_card{
     padding-top: 2rem;

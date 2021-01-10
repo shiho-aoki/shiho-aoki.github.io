@@ -1,0 +1,31 @@
+.site-name{
+    margin-top: 10rem;
+}
+
+.external-link{
+    background-color: whitesmoke;
+    padding-top: 2rem;
+}
+
+.name{
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.link_item{
+    padding-right: 0.7rem;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+}
+
+.footer-nav-content li{
+    text-align: center;
+    width: 20%;
+}
+
+.copyright{
+    text-align: center;
+}
