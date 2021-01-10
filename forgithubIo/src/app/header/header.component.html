@@ -1,5 +1,34 @@
-<div class="header">
+<!-- <header>
     <mat-icon class="table_rows" >table_rows</mat-icon>
-    <p class="headername"> {{ name }} </p>
+    <a href="/">
+        <p class="headername"> {{ name }} </p>
+    </a>
+    <span class="add_box_par">
     <mat-icon class="add_box">add_box</mat-icon>
-</div>
+    </span>
+</header> -->
+
+<header class="header">
+    <div class="header_wrapper" id="wrapper">
+        <div class="header_start">
+            <a href="/" class="home">{{ name }}</a>
+        </div>
+        <div class="header_media">
+            <nav class="header_nav">
+                <button class="nav_toggle" aria-expanded="false" type="button">
+                    <mat-icon class="table_rows">table_rows</mat-icon>
+                </button>
+                <ul class="nav_wrapper">
+                    <li class="nav_item"><a href="/">home</a></li>
+                    <li class="nav_item"><a href="/about">About</a></li>
+                    <li class="nav_item"><a href="/work">Work</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_end">
+            <a href="/sign_in">
+                <mat-icon class="add_box">add_box</mat-icon>
+            </a>
+        </div>
+    </div>
+</header>
