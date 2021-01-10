@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from './header/header.component';
 import { OverviewComponent } from './overview/overview.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { OverviewComponent } from './overview/overview.component';
     AboutmeComponent,
     WorkComponent,
     HeaderComponent,
-    OverviewComponent
+    OverviewComponent,
+    BlogComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
