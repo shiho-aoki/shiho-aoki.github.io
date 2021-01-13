@@ -16,7 +16,11 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { MypageComponent } from './mypage/mypage.component';
+
 @NgModule({
+  //Register declarations (=components) and pipes that is declared in the module
   declarations: [
     AppComponent,
     AboutmeComponent,
@@ -25,17 +29,24 @@ import { FooterComponent } from './footer/footer.component';
     OverviewComponent,
     BlogComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    MypageComponent
   ],
+  // Import another modules in my module
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     RouterModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
+  // Specify that registered in another module as imports
+  exports: [],
+  // Register services specified in the module
   providers: [],
-  bootstrap: [AppComponent]
+  // Specify the component became the entry point of the app 
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
