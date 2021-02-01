@@ -8,13 +8,16 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { MypageComponent } from './mypage/mypage.component';
 
+import { EnginneeingComponent } from './blogs/enginneeing/enginneeing.component';
+
 const routes: Routes = [
   { path: "", component: OverviewComponent },
   { path: "about", component:AboutmeComponent },
   { path: "work", component: WorkComponent },
   { path: "blog", component: BlogComponent },
   { path: "contact", component: ContactComponent },
-  { path: "mypage", component: MypageComponent }
+  { path: "mypage", component: MypageComponent },
+  { path: "blogs_engineering", component: EnginneeingComponent }
 ];
 
 @NgModule({

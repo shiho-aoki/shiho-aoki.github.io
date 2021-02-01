@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { MypageComponent } from './mypage/mypage.component';
+import { EnginneeingComponent } from './blogs/enginneeing/enginneeing.component';
 
 @NgModule({
   //Register declarations (=components) and pipes that is declared in the module
@@ -30,7 +31,8 @@ import { MypageComponent } from './mypage/mypage.component';
     BlogComponent,
     ContactComponent,
     FooterComponent,
-    MypageComponent
+    MypageComponent,
+    EnginneeingComponent
   ],
   // Import another modules in my module
   imports: [
