@@ -1,0 +1,37 @@
+<div class="home">
+    <div class="overview">
+        <div class="overview_content">
+            <!-- <div class="background">
+                <img src="../../assets/background.png">
+            </div> -->
+            <div class="github-status">
+                <h2>Overview</h2>
+                <img id="stats_card" src="https://github-readme-stats.vercel.app/api?username=shiho-aoki&show_icons=true&count_private=true&theme=dracula">
+                <img id="stats_langu" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shiho-aoki&hide=jupyter%20notebook&theme=dracula&langs_count=10">
+            </div>
+        </div>
+    </div>
+
+    <div class="anotation">
+        <ul>
+            <li *ngFor="let anotation of anotations">
+                <a href="{{ anotation.link }}">
+                    <span class="material-icons" id= "image_icon"> {{ anotation.image }} </span>
+                    <h3 class="content_title">{{ anotation.content }}</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="pinned">
+        <ul>
+            <h2>Pinned</h2>
+            <li *ngFor="let pinned of pinneds">
+                <a href="{{ pinned.path }}" class="pinned_item">
+                    <span class="material-icons" id="pin_icon">push_pin</span>
+                    <span class="pin_text">{{ pinned.name }}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
