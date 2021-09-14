@@ -1,0 +1,27 @@
+{
+  "name": "mypage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/shiho-aoki/shiho-aoki.github.io.git",
+  "author": "shiho-aoki <s.aoki.ase@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "11.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "date-fns": "2.11.1",
+    "gray-matter": "4.0.2",
+    "remark": "12.0.0",
+    "remark-html": "12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "16.9.1",
+    "@types/react": "17.0.20",
+    "typescript": "4.4.3"
+  }
+}
