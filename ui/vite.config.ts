@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   base: (process.env.NODE_ENV === 'poduction')
     ? '/shiho-aoki/ui/' : './',
- build: {
+  build: {
    outDir: '../docs'
  },
   plugins: [vue()]
