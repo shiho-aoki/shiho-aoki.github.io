@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed inset-y-0 left-0 flex max-w-full pl-0 mt-12 pt-4 portrait:hidden" >
+    <div class="fixed inset-y-0 left-0 flex max-w-full pl-0 mt-12 pt-4">
         <DialogPanel class="pointer-events-auto relative w-80 max-w-sm">
             <div class="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
                 <div class="px-4 sm:px-6">
@@ -19,6 +19,6 @@
     </div>
 </template>
 
-<script setup lang="ts">
-import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
+<script lang="ts">
+import { DialogPanel, DialogTitle } from '@headlessui/vue'
 </script>
