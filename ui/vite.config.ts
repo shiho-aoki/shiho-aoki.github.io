@@ -6,7 +6,7 @@ export default defineConfig({
   base: (process.env.NODE_ENV === 'poduction')
     ? '/shiho-aoki/ui/' : './',
  build: {
-   outDir: '../build'
+   outDir: '../docs'
  },
   plugins: [vue()]
 })
