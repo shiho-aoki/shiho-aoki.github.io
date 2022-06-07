@@ -17,10 +17,10 @@
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
-              <a v-for="item in navigation" :key="item.name" :href="item.href" 
+              <router-link v-for="item in navigation" :key="item.name" :to="item.href" 
                 :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">
               {{ item.name }}
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
@@ -41,9 +41,9 @@
             <transition enter-active-class="transition ease-out duration-100" enter-from-class="transform opacity-0 scale-95" enter-to-class="transform opacity-100 scale-100" leave-active-class="transition ease-in duration-75" leave-from-class="transform opacity-100 scale-100" leave-to-class="transform opacity-0 scale-95">
               <MenuItems class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <MenuItem v-slot="{ active }" v-for="item in menuItem" :key="item.name">
-                  <a :href="item.href" :target="item.target" :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">
+                  <router-link :to="item.href" :target="item.target" :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">
                   {{item.name}}
-                  </a>
+                  </router-link>
                 </MenuItem>
               </MenuItems>
             </transition>
@@ -55,13 +55,14 @@
     <DisclosurePanel class="sm:hidden">
       <div class="px-2 pt-2 pb-3 space-y-1">
         <DisclosureButton v-for="item in navigation" :key="item.name" 
-                          as="a" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block px-3 py-2 rounded-md text-base font-medium']" 
+                          as="router-link" :to="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block px-3 py-2 rounded-md text-base font-medium']" 
                           :aria-current="item.current ? 'page' : undefined">
           {{ item.name }}
         </DisclosureButton>
       </div>
     </DisclosurePanel>
   </Disclosure>
+  <router-view />
 </template>
 
 <script setup>
