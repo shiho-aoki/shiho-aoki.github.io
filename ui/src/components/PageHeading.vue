@@ -1,14 +1,4 @@
 <script setup lang="ts">
-defineProps<{
-  title: string;
-  type: string;
-  where: string;
-  date: string;
-  summary: string;
-  imageURL: string;
-  imageAlt: string;
-}>();
-
 import {
   BriefcaseIcon,
   CalendarIcon,
@@ -21,6 +11,14 @@ import {
   PencilIcon,
 } from "@heroicons/vue/solid";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/vue";
+
+defineProps<{
+  title: string;
+  type: string;
+  where: string;
+  date: string;
+  summary: string;
+}>();
 </script>
 
 <template>
@@ -153,7 +151,7 @@ import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/vue";
     </div>
     <!-- summary -->
     
-    <div :v-if="summary" class="block mt-5 w-full min-w-0">
+    <div class="block mt-5 w-full min-w-0">
         <h3 class="text-xl text-gray-500 sm:text-xl break-words">
         {{summary}}
         </h3>
