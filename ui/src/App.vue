@@ -1,5 +1,5 @@
 <template>
-  <Disclosure as="nav" class="bg-gray-800" v-slot="{ open }">
+  <Disclosure as="nav" class="bg-gray-800 navigation" v-slot="{ open }">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -66,10 +66,11 @@
 </template>
 
 <script setup lang="ts">
+import { createApp } from 'vue'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/vue/outline'
 
-const navigation = [
+let navigation = [
   { name: 'Latest Activity', href: '/', current: true },
   { name: 'Tech Note', href: '/tech_note', current: false },
   { name: 'Projects', href: '/project', current: false },
@@ -80,4 +81,18 @@ const menuItem = [
   { name: 'Zenn', href: 'https://zenn.dev/as_pml', target: '_blank'},
   { name: 'GitHub', href: 'https://github.com/shiho-aoki', target: '_blank' },
 ]
+
+// const chengeCurrentItem = e :any =>{
+//   console.log(history.state.current)
+  // const target = e.target.text
+  // const checkNav = navigation.copy()
+  // checkNav.map( (navItem, i) => {
+  //   if (navItem.name==target) {
+  //     navigation[i].current(true)
+  //   }else{
+  //     navigation[i].current(false)
+  //   }
+  // })
+//}
+
 </script>

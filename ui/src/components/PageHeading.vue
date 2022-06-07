@@ -17,7 +17,7 @@ defineProps<{
   type: string;
   where: string;
   date: string;
-  summary: string;
+  summary?: string;
 }>();
 </script>
 
@@ -151,7 +151,7 @@ defineProps<{
     </div>
     <!-- summary -->
     
-    <div class="block mt-5 w-full min-w-0">
+    <div :v-if="summary" class="block mt-5 w-full min-w-0">
         <h3 class="text-xl text-gray-500 sm:text-xl break-words">
         {{summary}}
         </h3>
