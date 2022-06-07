@@ -14,6 +14,7 @@ import {
   CalendarIcon,
   CheckIcon,
   ChevronDownIcon,
+  ChevronRightIcon,
   CurrencyDollarIcon,
   LinkIcon,
   LocationMarkerIcon,
@@ -26,36 +27,43 @@ import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/vue";
   <div class="m-5 p-5 border-2 rounded-md">
     <div  class="lg:flex lg:items-center lg:justify-between ">
         <div class="flex-1 min-w-0">
-        <h2
-            class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate"
-        >
-            {{ title }}
-        </h2>
-        <div
-            class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6"
-        >
             <div class="mt-2 flex items-center text-sm text-gray-500">
-            <BriefcaseIcon
-                class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
-                aria-hidden="true"
-            />
-            {{ type }}
+                <router-link to="">Tech Note</router-link> 
+                <ChevronRightIcon class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
+                <router-link to="">New Release</router-link>
+                <ChevronRightIcon class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" aria-hidden="true" />
+                <router-link to="">Name3.2</router-link> 
             </div>
-            <div class="mt-2 flex items-center text-sm text-gray-500">
-            <LocationMarkerIcon
-                class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
-                aria-hidden="true"
-            />
-            {{ where }}
+            <h2
+                class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate"
+            >
+                {{ title }}
+            </h2>
+            <div
+                class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6"
+            >
+                <div class="mt-2 flex items-center text-sm text-gray-500">
+                <BriefcaseIcon
+                    class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                    aria-hidden="true"
+                />
+                {{ type }}
+                </div>
+                <div class="mt-2 flex items-center text-sm text-gray-500">
+                <LocationMarkerIcon
+                    class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                    aria-hidden="true"
+                />
+                {{ where }}
+                </div>
+                <div class="mt-2 flex items-center text-sm text-gray-500">
+                <CalendarIcon
+                    class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                    aria-hidden="true"
+                />
+                {{ date }}
+                </div>
             </div>
-            <div class="mt-2 flex items-center text-sm text-gray-500">
-            <CalendarIcon
-                class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
-                aria-hidden="true"
-            />
-            {{ date }}
-            </div>
-        </div>
         </div>
 
         <div class="mt-5 flex lg:mt-0 lg:ml-4">
@@ -143,8 +151,9 @@ import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/vue";
         </Menu>
         </div>
     </div>
-     <!-- summary -->
-    <div class="block mt-5 w-full min-w-0">
+    <!-- summary -->
+    
+    <div :v-if="summary" class="block mt-5 w-full min-w-0">
         <h3 class="text-xl text-gray-500 sm:text-xl break-words">
         {{summary}}
         </h3>
