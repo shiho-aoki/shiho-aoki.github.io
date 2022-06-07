@@ -4,6 +4,12 @@
     <PageHeading title="New Tech Note Release3.2" type="Tech Note Release" where="Online" date="Published Jun 8, 2022"
                   summary="today, we are released new our materilas: tech's 3.2today, we are released new our materilas: tech's 3.2today, we are released new our materilas: tech's 3.2today, we are released new our materilas: tech's 3.2today, we are released new our materilas: tech's 3.2today, we are released new our materilas: tech's 3.2today, we are released new our materilas: tech's 3.2today, we are released new our materilas: tech's 3.2today, we are released new our materilas: tech's 3.2today, we are released new our materilas: tech's 3.2today, we are released new our materilas: tech's 3.2today, we are released new our materilas: tech's 3.2today, we are released new our materilas: tech's 3.2" />
     <CategoryPreview />
+    
+    <PageHeading title="New Tech Note Release3.2" type="Tech Note Release" where="Online" date="Published Jun 8, 2022" />
+    <PageHeading title="New Tech Note Release3.2" type="Tech Note Release" where="Online" date="Published Jun 8, 2022" />
+    <PageHeading title="New Tech Note Release3.2" type="Tech Note Release" where="Online" date="Published Jun 8, 2022" />
+    <PageHeading title="New Tech Note Release3.2" type="Tech Note Release" where="Online" date="Published Jun 8, 2022" /> 
+
   </div>
 </template>
 
