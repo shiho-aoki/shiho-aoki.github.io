@@ -49,6 +49,6 @@
 </dl>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { PaperClipIcon } from '@heroicons/vue/solid'
 </script>

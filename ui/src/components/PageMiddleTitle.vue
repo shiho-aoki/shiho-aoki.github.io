@@ -11,9 +11,8 @@
 </template>
 
 <script setup lang="ts">
-    import { ref } from "vue"
     defineProps<{
-        componentProp: ref<Vue.component>,
+        componentProp:any,
         title: string,
         discription: string,
     }>();
