@@ -24,8 +24,8 @@ const routes = [
     {path: '/about',component: About},
     //Pages
     // -about
-    {path: '/work', component: Work},
-    {path: '/academic', component: Academic}
+    {path: '/about/work', component: Work},
+    {path: '/about/academic', component: Academic}
 ]
 
 const router = createRouter({
