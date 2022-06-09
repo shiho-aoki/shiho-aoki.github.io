@@ -11,6 +11,7 @@ leftAt:
   - month: 09
   - day: 30
 position:
-  - 1 : マーケティング部門
-    -- job: SNSマーケティング
-    -- term:  all
+  - 1 :
+    - name: マーケティング部門
+    - job: SNSマーケティング
+    - term:  all

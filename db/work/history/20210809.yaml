@@ -11,7 +11,8 @@ leftAt:
   - month: 08
   - day: 27
 position:
-  - 1 : Trusure
-    -- job: もの創り実践プログラム「Treasure」2021
-    -- term:  all
+  - 1 :
+    - name: Trusure
+    - job: もの創り実践プログラム「Treasure」2021
+    - term:  all
 additional: https://voyagegroup.snar.jp/jobboard/detail.aspx?id=upwT50B8xR8
