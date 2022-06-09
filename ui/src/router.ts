@@ -6,7 +6,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // -top level componets
 import Home from './views/Home.vue'; //Latest Activity
 import TechNotes from './views/TechNote/TechNotes.vue';
-import Projects from './views/Projects/Projects.vue';
+import Projects from './views/ParsonalActivity/Projects.vue';
 import Timeline from './views/Timeline/Timeline.vue';
 import About from './views/Profile/About.vue';
 
