@@ -12,6 +12,7 @@ const routes = [
     { path: url.Academic, component: components.Academic },
     { path: url.Work, component: components.Work },
     { path: url.TechNotes, component: components.TechNotes },
+    // { path: url.TechNotePage, component: components.TechNotes }
 ]
 
 const router = createRouter({

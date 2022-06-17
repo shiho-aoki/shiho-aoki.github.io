@@ -4,5 +4,6 @@ export const url = {
     Profile: '/about',
     Academic: '/about/academic',
     Work: '/about/work',
-    TechNotes: '/notes'
+    TechNotes: '/notes',
+    TechNotePage: '/notes/:id'
 }
