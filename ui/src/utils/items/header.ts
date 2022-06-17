@@ -8,7 +8,8 @@ export const navItems: Array<INavigation> = [
     { name: 'Profile', href: url.Profile, current: false },
 ]
 export const profItems: Array<IProfileMenuItems> = [
-    { name: 'Profile', href: url.Academic, target: ''},
+    { name: 'My Academic History', href: url.Academic, target: ''},
+    { name: 'My Working History', href: url.Work, target: ''},
     { name: 'Zenn', href: 'https://zenn.dev/as_pml', target: '_blank'},
     { name: 'GitHub', href: 'https://github.com/shiho-aoki', target: '_blank' },
 ]

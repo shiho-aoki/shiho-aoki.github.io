@@ -38,7 +38,7 @@
             @apply hidden lg:block h-8 w-auto;
         };
     }
-    .mobile-header-items{
+    .pc-header-items{
         @apply hidden sm:block sm:ml-6;
         div {
             @apply flex space-x-4;
@@ -48,7 +48,7 @@
         }
     }
 };
-.pc-header-items {
+.mobile-header-items {
     @apply sm:hidden;
     div {
         @apply px-2 pt-2 pb-3 space-y-1;
