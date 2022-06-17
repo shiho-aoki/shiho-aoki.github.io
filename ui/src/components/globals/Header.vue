@@ -1,5 +1,5 @@
 <template>
-    <Disclosure as='nav' class='header navigation' v-slot='{ open }' >
+    <Disclosure as='nav' class='header navigation' v-slot='open' >
         <div class='headerSub'>
             <!--@start mobile menu-->
             <div class='mobileMenu'>
@@ -13,8 +13,8 @@
             <!--@start header meue mian-->
             <div class='headerMenu'>
                 <div class='headerLogImage'>
-                    <img class='mobileLogo' :src='mobileLogoPath' alt='as-pml' />
-                    <img class='nomalLogo' :src='nomalLogoPath' alt='as-pml' />
+                    <img class='mobileLogo' src='../../assets/logos/logo-no-title.png' alt='as-pml' />
+                    <img class='nomalLogo' src='../../assets/logos/logo-with-title-gray.png' alt='as-pml' />
                 </div>
                 <div class='headerMeneItems'>
                     <div class='headerMenuItem'>
@@ -34,7 +34,7 @@
                 </button>
                 <Menu as='div' class='profileMenu'>
                     <MenuButton calss='profileMenuButton'>
-                        <img class='profileImage' src='profileImagePath' alt='Me' />
+                        <img class='profileImage' src='../../assets/me.jpeg' alt='Me' />
                     </MenuButton>
                     <transition enter-active-class='transition ease-out duration-100' 
                                 enter-from-class='transform opacity-0 scale-95'
@@ -43,7 +43,7 @@
                                 leave-from-class='transform opacity-100 scale-100'
                                 leave-to-class='transform opacity-0 scale-95'>
                         <MenuItems class='profileMenuItems'>
-                            <MenuItem v-slot='{ active }' v-for='item in profileMenuItems' :key='item.name'>
+                            <MenuItem v-slot='active' v-for='item in profileMenuItems' :key='item.name'>
                                 <router-link :to="item.href" :target="item.target" 
                                             :class="[active ? 'itemActived' : 'itemDiactived']">
                                     {{item.name}}
@@ -81,11 +81,8 @@ import { url } from '../../utils/url';
 
 export default defineComponent({
     setup(){
-        const mobileLogoPath: string = './assets/logos/logo-no-title.png';
-        const nomalLogoPath: string = './assets/logos/logo-with-title-gray.png';
-        const profileImagePath: string = './assets/me.jpeg';
-
         const open = true;
+        const active = false;
 
         const profileMenuItems: Array<iProfileMenuItems> = [
             {name: 'Academic', href: url.Academic, target: ''},
@@ -117,20 +114,16 @@ export default defineComponent({
             navigation,
             chengeCurrentItem,
             profileMenuItems,
-            // header logo icon file path
-            mobileLogoPath,
-            nomalLogoPath,
-            profileImagePath,
             // used modules
             Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems, 
             BellIcon, MenuIcon, XIcon,
-            open
+            open, active
         }
     }
 })
 </script>
 
-<style lang='scss' scoped>
+<!-- <style lang='scss' scoped>
 .header {
     @apply bg-gray-800;
     @apply max-w-7xl mx-auto px-2 sm:px-6 lg:px-8;
@@ -232,4 +225,4 @@ export default defineComponent({
         @apply block px-3 py-2 rounded-md text-base font-medium;
     };
 }
-</style>
+</style> -->
