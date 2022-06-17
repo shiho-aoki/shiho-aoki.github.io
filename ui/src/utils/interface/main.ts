@@ -1,10 +1,10 @@
-export interface iNavigation {
+export interface INavigation {
     name: string;
     href: string;
     current: boolean
 }
 
-export interface iProfileMenuItems{
+export interface IProfileMenuItems{
     name: string;
     href: string;
     target: string;
