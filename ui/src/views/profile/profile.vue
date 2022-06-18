@@ -23,7 +23,7 @@
     </div>
     <MiddleTitles title="Skills" discription="My Tech Skill Sets" :component="skills" />
     <MiddleTitles title="Licenses and Certifications" discription="since 2017." :component="license" />
-    
+    <router-view />
 </template>
 
 <script setup lang="ts">
