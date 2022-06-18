@@ -24,3 +24,11 @@ export interface ILicenses {
     name: string;
     discription: string;
 }
+
+export interface IBachelor {
+    title: string;
+    type: string;
+    where: string;
+    date: string;
+    summary?: string;
+}

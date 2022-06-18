@@ -1,7 +1,7 @@
 export const url = {
-    LatestActivity: '/',
+    LatestActivity: '/latest',
     ParsonalActivity: '/logs',
-    Profile: '/about',
+    Profile: '/',
     Academic: '/about/academic',
     Work: '/about/work',
     TechNotes: '/notes',

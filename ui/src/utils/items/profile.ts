@@ -39,6 +39,10 @@ export const ProfileChips: Array<IProfileChip> = [
 
 export const LicensesAndCertifications: Array<ILicenses>= [
   {
+    name: "2022.03",
+    discription: "Micro MBA 取得"
+  },
+  {
     name: "2022.01",
     discription: "情報セキュリティマネジメント試験 合格"
   },
