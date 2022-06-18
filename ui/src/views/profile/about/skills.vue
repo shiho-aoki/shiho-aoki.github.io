@@ -70,31 +70,31 @@ const categories = ref({
     {
       id: 10,
       title: 'Golang',
-      src : '/src/assets/img/lang/go.png',
+      src : '/img/lang/go.png',
       star: "★★★★☆"
     },
     {
       id: 20,
       title: "TypeScript",
-      src : '/src/assets/img/lang/ts.png',
+      src : '/img/lang/ts.png',
       star: "★★★★☆"
     },
     {
       id: 30,
       title: "GCP",
-      src : '/src/assets/img/lang/gcp.png',
+      src : '/img/lang/gcp.png',
       star: "★★★★☆"
     },
     {
       id: 40,
       title: "C++",
-      src : '/src/assets/img/lang/Cpp.png',
+      src : '/img/lang/Cpp.png',
       star: "★★★★★"
     },
     {
       id: 50,
       title: "React(Typescript)",
-      src : '/src/assets/img/lang/react.png',
+      src : '/img/lang/react.png',
       star: "★★★★★"
     },
   ],
@@ -102,134 +102,134 @@ const categories = ref({
     {
       id: 10,
       title: 'Golang',
-      src : '/src/assets/img/lang/go.png',
+      src : '/img/lang/go.png',
       star: "★★★★☆",
     },
     {
       id: 20,
       title: 'C++',
-      src : '/src/assets/img/lang/Cpp.png',
+      src : '/img/lang/Cpp.png',
       star: "★★★★★",
     },
     {
       id: 30,
       title: 'Rust',
-      src : '/src/assets/img/lang/rust.png',
+      src : '/img/lang/rust.png',
       star: "★★★☆☆",
 
     },
     {
       id: 40,
       title: 'python',
-      src : '/src/assets/img/lang/python.png',
+      src : '/img/lang/python.png',
       star: "★★★★★",
     },
     {
       id: 50,
       title: 'TenserFlow',
-      src : '/src/assets/img/lang/tf.png',
+      src : '/img/lang/tf.png',
       star: "★★★☆☆",
 
     },
     {
       id: 60,
       title: 'Ruby',
-      src : '/src/assets/img/lang/ruby.png',
+      src : '/img/lang/ruby.png',
       star: "★★★☆☆",
     },
     {
       id: 70,
       title: 'Ruby on Rails',
-      src : '/src/assets/img/lang/rails.png',
+      src : '/img/lang/rails.png',
       star: "★★★★☆",
 
     },
     {
       id: 80,
       title: 'JavaScript',
-      src : '/src/assets/img/lang/js.png',
+      src : '/img/lang/js.png',
       star: "★★★★★",
     },
     {
       id: 90,
       title: 'TypeScript',
-      src : '/src/assets/img/lang/ts.png',
+      src : '/img/lang/ts.png',
       star: "★★★★☆",
 
     },
     {
       id: 100,
       title: 'React',
-      src : '/src/assets/img/lang/react.png',
+      src : '/img/lang/react.png',
       star: "★★★★☆",
     },
     {
       id: 110,
       title: 'NEXT.JS',
-      src : '/src/assets/img/lang/next.png',
+      src : '/img/lang/next.png',
       star: "★★★★☆",
 
     },
     {
       id: 120,
       title: 'Vue',
-      src : '/src/assets/img/lang/vue.png',
+      src : '/img/lang/vue.png',
       star: "★★★☆☆",
     },
     {
       id: 130,
       title: 'Nuxt.JS',
-      src : '/src/assets/img/lang/nuxt.png',
+      src : '/img/lang/nuxt.png',
       star: "★★☆☆☆",
 
     },
     {
       id: 140,
       title: 'SCSS',
-      src : '/src/assets/img/lang/scss.png',
+      src : '/img/lang/scss.png',
       star: "★★★★☆",
     },
     {
       id: 150,
       title: 'PostgreSQL',
-      src : '/src/assets/img/lang/Postgresql.png',
+      src : '/img/lang/Postgresql.png',
       star: "★★★☆☆",
 
     },
     {
       id: 160,
       title: 'Git',
-      src : '/src/assets/img/lang/git.png',
+      src : '/img/lang/git.png',
       star: "★★★★★",
     },
         {
       id: 170,
       title: 'Docker',
-      src : '/src/assets/img/lang/docker.png',
+      src : '/img/lang/docker.png',
       star: "★★★★★",
     },
     {
       id: 180,
       title: 'Google Cloud Platform (gcp)',
-      src : '/src/assets/img/lang/gcp.png',
+      src : '/img/lang/gcp.png',
       star: "★★★★☆",
     },
     {
       id: 190,
       title: 'Amazon Web Services (aws)',
-      src : '/src/assets/img/lang/aws.png',
+      src : '/img/lang/aws.png',
       star: "★★★☆☆",
     },
     {
       id: 200,
       title: 'NGINX',
-      src : '/src/assets/img/lang/nginx.png',
+      src : '/img/lang/nginx.png',
       star: "★★★★☆",
     },
     {
       id: 210,
       title: 'Ubuntu',
-      src : '/src/assets/img/lang/ubuntu.png',
+      src : '/img/lang/ubuntu.png',
       star: "★★★★☆",
     },
 
@@ -239,26 +239,26 @@ const categories = ref({
     {
       id: 10,
       title: 'Common Lisp',
-      src : '/src/assets/img/lang/commonlisp.png',
+      src : '/img/lang/commonlisp.png',
       star: "★★☆☆☆",
     },
     {
       id: 20,
       title: "ERLANG",
-      src : '/src/assets/img/lang/Erlang.png',
+      src : '/img/lang/Erlang.png',
       star: "★★★☆☆",
     },
     {
       id: 30,
       title: 'Elixir',
-      src : '/src/assets/img/lang/elixir.png',
+      src : '/img/lang/elixir.png',
       star: "★☆☆☆☆",
 
     },
     {
       id: 40,
       title: 'Apache HTTP Server',
-      src : '/src/assets/img/lang/apache.png',
+      src : '/img/lang/apache.png',
       star: "★★★☆☆",
     },
   ],
