@@ -12,7 +12,7 @@
                                 </li>
                                 <li class="item-note-class" v-for="subitem in item.subitems">
                                     <li>
-                                        <a :href="subitem.itemurl">{{subitem.name}}</a>
+                                        <router-link :to="subitem.itemurl">{{subitem.name}}</router-link>
                                     </li>
                                 </li>
                             </ul>

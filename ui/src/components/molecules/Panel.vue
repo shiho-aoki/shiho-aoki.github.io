@@ -1,5 +1,5 @@
 <template>
-        <a :href="url" class="panel-link">
+        <router-link :to="url" class="panel-link">
             <dt>
             <div class="panel-icon">
                 <component :is="iconComponent" class="h-6 w-6" aria-hidden="true" />
@@ -14,7 +14,7 @@
             <dd class="panel-discription">
                 {{ description }}
             </dd>
-        </a>
+        </router-link>
 </template>
 
 <script setup lang="ts">
