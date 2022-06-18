@@ -9,7 +9,7 @@ export const navItems: Array<INavigation> = [
 ]
 export const profItems: Array<IProfileMenuItems> = [
     { name: 'My Academic History', href: url.Academic, target: ''},
-    { name: 'My Working History', href: url.Work, target: ''},
+    { name: 'My Business Experience', href: url.Work, target: ''},
     { name: 'Zenn', href: 'https://zenn.dev/as_pml', target: '_blank'},
     { name: 'GitHub', href: 'https://github.com/shiho-aoki', target: '_blank' },
 ]
