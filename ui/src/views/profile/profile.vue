@@ -21,9 +21,9 @@
             </div>
         </div>
     </div>
-
+    <MiddleTitles title="Skills" discription="My Tech Skill Sets" :component="skills" />
     <MiddleTitles title="Licenses and Certifications" discription="since 2017." :component="license" />
-    <MiddleTitles title="Skills" discription="TODO; add discriotion or summary" :component="skills" />
+    
 </template>
 
 <script setup lang="ts">
