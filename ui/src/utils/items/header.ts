@@ -2,10 +2,10 @@ import { INavigation, IProfileMenuItems } from '../interface/main';
 import { url } from '../url';
 
 export const navItems: Array<INavigation> = [
-    { name: 'Latest Activity', href: url.LatestActivity, current: true },
+    { name: 'Latest Activity', href: url.LatestActivity, current: false },
     { name: 'Tech Note', href: url.TechNotes, current: false },
     { name: 'Timeline', href: url.ParsonalActivity, current: false },
-    { name: 'Profile', href: url.Profile, current: false },
+    { name: 'Profile', href: url.Profile, current: true },
 ]
 export const profItems: Array<IProfileMenuItems> = [
     { name: 'My Academic History', href: url.Academic, target: ''},
