@@ -80,8 +80,8 @@
 
 <script lang="ts">
 
-    import { navItems, profItems } from '../items/header';
-    import { INavigation } from '../../interface/header';
+    import { navItems, profItems } from '../../items/header';
+    import { INavigation } from '../../../interface/header';
 
     export default {
         name: 'Header',
