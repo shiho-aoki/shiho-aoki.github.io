@@ -152,6 +152,13 @@
     "@vue/compiler-sfc" "^3.2.31"
     "@vue/reactivity" "^3.2.31"
 
+"@vue-hero-icons/outline@^1.7.2":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@vue-hero-icons/outline/-/outline-1.7.2.tgz#ec723ee45e142d2249948c58be65f5d35e3c4ed3"
+  integrity sha512-mgMpncarjZHXY1K2tyjbYHf53yQG9amroDR9t2iH/umpsN8+f8RNcTy1m131EZ8WBCm8MpF97XpXPV129rvtVg==
+  dependencies:
+    babel-helper-vue-jsx-merge-props "^2.0.3"
+
 "@vue/compiler-core@3.2.25":
   version "3.2.25"
   resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.2.25.tgz#3fa88debc97a89a513e1d9b771e0802b9a006734"
@@ -382,6 +389,11 @@ autoprefixer@10.4.7:
     normalize-range "^0.1.2"
     picocolors "^1.0.0"
     postcss-value-parser "^4.2.0"
+
+babel-helper-vue-jsx-merge-props@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-2.0.3.tgz#22aebd3b33902328e513293a8e4992b384f9f1b6"
+  integrity sha512-gsLiKK7Qrb7zYJNgiXKpXblxbV5ffSwR0f5whkPAaBAR4fhi6bwRZxX9wBlIc5M/v8CCkXUbXZL4N/nSE97cqg==
 
 balanced-match@^1.0.0:
   version "1.0.2"
