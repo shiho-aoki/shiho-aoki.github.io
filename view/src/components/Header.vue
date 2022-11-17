@@ -5,7 +5,7 @@
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <a :href="urls.profile.overview">
               <span class="sr-only">as pml</span>
-              <img class="h-8 w-auto sm:h-10" src="/assets/logo/logo-with-title.png" alt=" as.+?pml" />
+              <img class="h-8 w-auto sm:h-10" src="../assets/img/logo/logo-with-title.png" alt=" as.+?pml" />
             </a>
           </div>
           <div class="-my-2 -mr-2 md:hidden">
@@ -117,7 +117,7 @@
   </template>
   
   <script setup lang="ts">
-  import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
+  import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue';
   import {
     AtSymbolIcon,
     Bars3Icon,
@@ -129,7 +129,7 @@
     XMarkIcon,
     LinkIcon
   } from '@heroicons/vue/24/outline'
-  import { ChevronDownIcon } from '@heroicons/vue/20/solid'
+  import { ChevronDownIcon } from '@heroicons/vue/20/solid';
 
   const urls = {
     technote: "https://note.as-pml.com/",
