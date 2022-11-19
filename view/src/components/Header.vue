@@ -125,7 +125,7 @@ import {
   CalendarIcon,
   AcademicCapIcon,
   CheckIcon,
-  FingerPrintIcon,
+  EnvelopeIcon,
   XMarkIcon,
   LinkIcon
 } from '@heroicons/vue/24/outline';
@@ -168,7 +168,7 @@ const resources =
       {
         name: 'Github',
         href: urls.other.github,
-        icon: FingerPrintIcon,
+        icon: EnvelopeIcon,
       },
       {
         name: 'Events',

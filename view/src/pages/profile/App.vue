@@ -71,13 +71,15 @@
       </div>
     </div>
   </div>
-  <div class="flex justify-center mx-32 mb-6">
+  <div class="justify-center mx-32 mb-6">
     <LicenssesAndCertifications />
   </div>
+  <Footter />
 </template>
 
 <script lang="ts">
 import Header from '../../components/Header.vue';
+import Footter from '../../components/Footter.vue';
 import Skills from './Skills.vue';
 import LicenssesAndCertifications from './LicenssesAndCertifications.vue'
 import { urls } from '../../store/urls';
@@ -94,7 +96,8 @@ export default {
   components: {
     Header,
     Skills,
-    LicenssesAndCertifications
+    LicenssesAndCertifications,
+    Footter
   }
 }
 </script>

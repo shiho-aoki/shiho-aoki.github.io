@@ -1,6 +1,8 @@
 <template>
     <Header />
-    <TimelinePanel :data="testdata"/>
+    <div class="my-3 mx-10">
+      <TimelinePanel :data="testdata"/>
+    </div>
 </template>
 
 <script lang="ts">
