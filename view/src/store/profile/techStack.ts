@@ -50,7 +50,7 @@ export const CommonUseTechStack: Array<ITechStack> = [
         imgsrc : '/img/lang/go.png',
         star: "★★★★☆",
         link: "https://note.as-pml.com/Golang-d35516157cf047f2828029dfdbe03b54",
-        type: ""
+        type: "language"
     },
     {
         id: 20,
@@ -58,7 +58,7 @@ export const CommonUseTechStack: Array<ITechStack> = [
         imgsrc: 'img/lang/Cpp.png',
         star: "★★★★★",
         link: "https://note.as-pml.com/C-f2d5f0b6b15e48a2966207cd9c8f20cc",
-        type: ""
+        type: "language"
     },
     {
     id: 30,
@@ -249,4 +249,12 @@ export const TrainingAndInterest: Array<ITechStack> = [
         link: "https://note.as-pml.com/Apache-HTTP-Server-cb93e4cfd8b347e0bbf5d80387530d83",
         type: "technology",
     },
+    // {
+    //     id: 50,
+    //     langname: 'Zig',
+    //     imgsrc : '/img/lang/apache.png',
+    //     star: "★★★☆☆",
+    //     link: "https://note.as-pml.com/Apache-HTTP-Server-cb93e4cfd8b347e0bbf5d80387530d83",
+    //     type: "technology",
+    // },
 ]

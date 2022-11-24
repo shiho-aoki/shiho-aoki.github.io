@@ -1,15 +1,14 @@
 <template>
-    <Header />
-    b
+  <StepPanel />
 </template>
 
 <script lang="ts">
-import Header from '../../components/Header.vue';
+import StepPanel from "../../components/StepPanel.vue"
 
 export default {
   name: 'Job',
   components: {
-    Header,
+    StepPanel
   }
 }
 </script>

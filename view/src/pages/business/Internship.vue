@@ -1,15 +1,13 @@
 <template>
-    <Header />
-    b
+    i
 </template>
 
 <script lang="ts">
-import Header from '../../components/Header.vue';
 
 export default {
   name: 'Internship',
-  components: {
-    Header,
-  }
+  // components: {
+  //   Header,
+  // }
 }
 </script>
