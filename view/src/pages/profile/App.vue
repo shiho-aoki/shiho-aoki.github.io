@@ -23,6 +23,7 @@
   <div calss="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
     <div class="px-4">
       <span class="mt-6 max-w-2xl text-lg leading-8 text-gray-600">
+        <br />
         Experienced Software Engineer with a demonstrated history of working in the higher education industry. <br />
         Skilled in Python, JavaScript/TypeScript (React, Next, Angular, Vue, Nuxt), Golang, Elang, C++ ,and Google Cloud Platform, AWS etc.<br />
         Engineering professional with a Bachelor of Science - BS focused in Biomedical/Medical Engineering from Waseda University.<br />

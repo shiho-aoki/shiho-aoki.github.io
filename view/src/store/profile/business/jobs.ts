@@ -11,7 +11,7 @@ export const jobs: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = [
                 time: "2021.09-2022.03",
                 },
                 {
-                step: "EAGLYS.inc",
+                step: "EAGLYS inc.",
                 position: "Software engineer / Developer",
                 context: "",
                 time: "2020.03-present",

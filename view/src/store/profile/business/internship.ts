@@ -5,7 +5,7 @@ export const internships: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = 
         sp: {
             steps: [
                 {
-                step: "MAISON MARC.inc",
+                step: "MAISON MARC inc.",
                 position: "AI Engineer",
                 context: "",
                 time: "2019.11-2020.03",
@@ -23,7 +23,7 @@ export const internships: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = 
                 time: "2021.08",
                 },
                 {
-                step: "TOMONOKAI.Co.,Ltd.",
+                step: "TOMONOKAI Co.,Ltd.",
                 position: "Web Marketing/Engineer",
                 context: "",
                 time: "2019.06-present",
