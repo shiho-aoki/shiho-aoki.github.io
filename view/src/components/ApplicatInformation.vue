@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-hidden bg-white shadow shadow-blue-500/50 sm:rounded-lg">
+    <div class="overflow-hidden bg-white shadow shadow-blue-500/50 sm:rounded-lg sm:mx-0">
       <div class="px-4 py-5 sm:px-6">
         <p class="mt-1 max-w-2xl text-sm text-blue-500"> {{ licenseOrCertification }} </p>
         <h3 class="text-lg font-medium leading-6 text-gray-900">{{data.title}}</h3>

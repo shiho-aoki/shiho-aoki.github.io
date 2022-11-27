@@ -28,7 +28,7 @@ export const ResentTechStack: Array<ITechStack> = [
     {
         id: 40,
         langname: "C++",
-        imgsrc : '/img/lang/Cpp.png',
+        imgsrc : '/img/lang/cpp.png',
         star: "★★★★★",
         link: "https://note.as-pml.com/C-f2d5f0b6b15e48a2966207cd9c8f20cc",
         type: "langugae"
@@ -55,7 +55,7 @@ export const CommonUseTechStack: Array<ITechStack> = [
     {
         id: 20,
         langname: 'C++',
-        imgsrc: 'img/lang/Cpp.png',
+        imgsrc: 'img/lang/cpp.png',
         star: "★★★★★",
         link: "https://note.as-pml.com/C-f2d5f0b6b15e48a2966207cd9c8f20cc",
         type: "language"
@@ -161,7 +161,7 @@ export const CommonUseTechStack: Array<ITechStack> = [
     {
     id: 150,
     langname: 'PostgreSQL',
-    imgsrc: '/img/lang/Postgresql.png',
+    imgsrc: '/img/lang/postgresql.png',
     star: "★★★☆☆",
     link: "https://note.as-pml.com/PostgresSQL-88d9f714fe174c59993b77b745fafd95",
     type: "technology"
@@ -228,7 +228,7 @@ export const TrainingAndInterest: Array<ITechStack> = [
     {
         id: 20,
         langname: "ERLANG",
-        imgsrc : '/img/lang/Erlang.png',
+        imgsrc : '/img/lang/erlang.png',
         star: "★★★☆☆",
         link: "https://note.as-pml.com/Erlang-893f931105b24c6ca4b7eb70d88e75a6",
         type: "language",

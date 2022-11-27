@@ -71,7 +71,7 @@
       </div>
     </div>
   </div>
-  <div class="justify-center mx-32 mb-6">
+  <div class="justify-center mb-6 lg:mx-32 sm:mx-3">
     <LicenssesAndCertifications />
   </div>
   <Footter />
