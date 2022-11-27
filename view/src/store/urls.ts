@@ -14,3 +14,7 @@ export const urls = {
       events: "/events"
     }
 }
+
+export const noteUrls = {
+  rust: "https://note.as-pml.com/Rust-95072432a12240489984af6ee6b2490c"
+}

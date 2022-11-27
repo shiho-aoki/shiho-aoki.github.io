@@ -1,6 +1,6 @@
 <template>
     <Header />
-    b
+    commig soon...
 </template>
 
 <script lang="ts">
