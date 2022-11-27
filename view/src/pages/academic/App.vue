@@ -1,15 +1,12 @@
 <template>
     <Header />
-    b
+    <div v-for="school in schools">
+      <StepPanel :stepsdata="school.sp" :achivedata="school.cp" />
+    </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import Header from '../../components/Header.vue';
-
-export default {
-  name: 'App',
-  components: {
-    Header,
-  }
-}
+import StepPanel from "../../components/StepPanel.vue";
+import { schools } from "@/store/profile/academic/univ";
 </script>

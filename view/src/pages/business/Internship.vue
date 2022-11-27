@@ -1,13 +1,10 @@
 <template>
-    i
+  <div v-for="job in internships">
+    <StepPanel :stepsdata="job.sp" :achivedata="job.cp" />
+  </div>
 </template>
 
-<script lang="ts">
-
-export default {
-  name: 'Internship',
-  // components: {
-  //   Header,
-  // }
-}
+<script setup lang="ts">
+import StepPanel from "../../components/StepPanel.vue";
+import { internships } from "@/store/profile/business/internship";
 </script>

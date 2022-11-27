@@ -1,14 +1,10 @@
 <template>
-  <StepPanel />
+  <div v-for="job in jobs">
+    <StepPanel :stepsdata="job.sp" :achivedata="job.cp" />
+  </div>
 </template>
 
-<script lang="ts">
-import StepPanel from "../../components/StepPanel.vue"
-
-export default {
-  name: 'Job',
-  components: {
-    StepPanel
-  }
-}
+<script setup lang="ts">
+import StepPanel from "../../components/StepPanel.vue";
+import { jobs } from "@/store/profile/business/jobs";
 </script>

@@ -11,13 +11,9 @@
       </div>
 
       <div class="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-2">
-        <div v-for="data in testdata" class="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
+        <div v-for="data in achivedata" class="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
           <div class="p-5">
-            <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-blue-50">
-              <svg class="w-8 h-8 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-              </svg>
-            </div>
+            <div class="flex items-center justify-center w-5 h-5 mb-4 rounded-full bg-blue-300"></div>
             <p class="mb-2 font-bold">{{data.headline}}</p>
             <p class="text-sm leading-5 text-gray-900">
               {{data.article}}
@@ -31,22 +27,6 @@
 </template>
   
 <script setup lang="ts">
-const testdata = [
-    {
-        headline: "Football Sports",
-        article: "Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    },
-    {
-        headline: "Bowling Sports",
-        article: "Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling."
-    },
-    {
-        headline: "Cycling Sports",
-        article: "A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker."
-    },
-    {
-        headline: "Weight Lifting Sports",
-        article: "Meanwhile, in behind the bicycle shed, Hercules Morse, as big as a horse."
-    }
-]
+import { IContentesPanel } from "./interface/panel";
+defineProps<{achivedata: Array<IContentesPanel>}>();
 </script>

@@ -1,22 +1,7 @@
 <template>
   <Header />
-  <Listbox as="div" v-model="selected" class="m-2">
-
-    <div class="bg-white py-24 sm:py-32 lg:py-40">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8 content-center">
-        <div class="sm:text-center">
-          <h2 class="text-lg font-semibold leading-8 text-blue-500">since 2019.</h2>
-          <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">my working and internship background</p>
-          <!-- <div class="flex justify-center mt-4">
-            <a :href="url.other.github" target="_blank" rel="noopener noreferrer">
-              <img src="https://img.shields.io/github/followers/shiho-aoki?label=Follow&style=social" />
-            </a>
-          </div> -->
-        </div>
-      </div>
-    </div>
-    
-    <div class="mt-1 relative">
+  <Listbox as="div" v-model="selected" class="m-3">
+    <div class="mt-10 relative">
       <ListboxButton class="relative w-full bg-blue-300 border border-blue-300 rounded-md shadow-sm pl-3 pr-10 py-2 cursor-default focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-300 sm:text-sm">
         <span class="flex items-center">
           <span class="ml-3 block truncate text-white">{{ selected.name }}</span>
