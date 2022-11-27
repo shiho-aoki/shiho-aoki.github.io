@@ -1,15 +1,12 @@
 <template>
-    <Header />
-    commig soon...
+  <Header />
+  <div v-for="event in events">
+    <EventPanel :stepsdata="event.sp" :achivedata="event.cp" />
+  </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import Header from '../../components/Header.vue';
-
-export default {
-  name: 'App',
-  components: {
-    Header,
-  }
-}
+import EventPanel from "../../components/EventPanel.vue";
+import { events } from "../../store/events/events";
 </script>

@@ -12,3 +12,17 @@ export interface ISetpPanel {
     }>,
     end: string
 }
+
+export interface IEventSetpPanel {
+    steps: Array<{
+        step: string,
+        position: string,
+        context: string,
+        info: {
+            url: string,
+            alt: string,
+        },
+        time: string,
+    }>,
+    end: string
+}
