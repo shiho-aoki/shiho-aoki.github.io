@@ -30,19 +30,15 @@
       </span>
     </div>
   </div>
-  
-  <div class="bg-white py-20 sm:py-32 lg:py-20">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 grid grid-cols-1 gap-2 content-center">
-      <div class="mx-32 px-32">
-        <img src="https://github-readme-stats.vercel.app/api?username=shiho-aoki&count_private=true&show_icons=true" 
-            class="h-auto w-full object-cover object-center" />
-      </div>
-      <!-- <div class="mx-32 px-32">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shiho-aoki&count_private=true&hide=jupyter%20notebook,html,CSS,Makefile&langs_count=11&layout=compact" 
-            class="h-auto w-full object-cover object-center" />
-      </div> -->
-    </div>
+
+  <div class="justify-center mt-10 mb-6 2xl:mx-52 xl:mx-44 lg:mx-32 sm:mx-10 lg:px-20">
+    <img src="https://github-readme-stats.vercel.app/api?username=shiho-aoki&count_private=true&show_icons=true" 
+        class="h-auto w-full object-cover object-center" />
   </div>
+  <!-- <div class="mx-32 px-32">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shiho-aoki&count_private=true&hide=jupyter%20notebook,html,CSS,Makefile&langs_count=11&layout=compact" 
+        class="h-auto w-full object-cover object-center" />
+  </div> -->
 
   <div class="bg-white py-24 sm:py-32 lg:py-40">
     <div class="mx-auto max-w-7xl px-6 lg:px-8 content-center">

@@ -2,7 +2,7 @@ import { IApplicatInfromation } from "../../components/interface/applicatInforma
 
 export const licenses: Array<IApplicatInfromation> = [
     {
-        title: "情報セキュリティマネジメント",
+        title: "Information Security Manegement",
         when: "Jan 2022・No Expiration Date",
         organ: "経済産業省",
         number: "SG-2021-12-07730",
