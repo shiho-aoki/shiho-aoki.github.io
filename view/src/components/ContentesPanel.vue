@@ -18,6 +18,12 @@
             <p class="text-sm leading-5 text-gray-900">
               {{data.article}}
             </p>
+            <a v-if="data.urls" :href="data.urls.ref">
+              <div class="mt-2 flex items-center text-sm text-gray-500">
+                <LinkIcon class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
+                {{data.urls.name}}
+              </div>
+            </a>
           </div>
           <div class="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
         </div>
@@ -28,5 +34,6 @@
   
 <script setup lang="ts">
 import { IContentesPanel } from "./interface/panel";
+import { LinkIcon } from '@heroicons/vue/20/solid'
 defineProps<{achivedata: Array<IContentesPanel>}>();
 </script>

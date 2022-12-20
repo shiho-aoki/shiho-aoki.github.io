@@ -39,12 +39,12 @@ export const internships: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = 
         },
         cp: [
             {
-            headline: "string",
-            article: "string",
+            headline: "Treasure: Award of CI/CD",
+            article: "Aug 2021, VOYAGE GROUP (at that time, now: CARTA HOLDINGS)",
             },
             {
-            headline: "string",
-            article: "string",
+            headline: "Innovation Award",
+            article: "Dec 2020, Tomonokai Co.,Ltd.",
             }
         ],
     }

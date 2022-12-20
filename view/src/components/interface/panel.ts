@@ -1,6 +1,10 @@
 export interface  IContentesPanel {
     headline: string,
     article: string,
+    urls ?: {
+        ref: string,
+        name: string,
+    },
 }
 
 export interface ISetpPanel {

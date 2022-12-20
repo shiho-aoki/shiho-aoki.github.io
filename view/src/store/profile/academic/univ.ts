@@ -1,5 +1,25 @@
 import { IContentesPanel, ISetpPanel } from "../../../components/interface/panel";
 
+interface Ipaper {
+    number: number,
+    auther: string,
+    title: string,
+    date: string,
+    publicedBy: string,
+    doi: string,
+}
+
+export const paper: Array<Ipaper> = [
+    {
+        number: 1,
+        auther: "WataruOnodera, NobuyukiHarab, ShihoAoki, ToruAsahia, NaoyaSawamura",
+        title: "Phylogenetic tree reconstruction via graph cut presented using a quantum-inspired computer",
+        date: "2023",
+        publicedBy: "Molecular Phylogenetics and Evolution",
+        doi: "https://doi.org/10.1016/j.ympev.2022.107636",
+    },
+]
+
 export const schools: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = [
     {
         sp: {
@@ -27,12 +47,20 @@ export const schools: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = [
         },
         cp: [
             {
-            headline: "string",
-            article: "string",
+            headline: "zaikenn",
+            article: "",
+            urls: {
+                ref: "",
+                name: "",
+            },
             },
             {
-            headline: "string",
-            article: "string",
+            headline: "",
+            article: "",
+            urls: {
+                ref: "",
+                name: "",
+            },
             }
         ],
     }
