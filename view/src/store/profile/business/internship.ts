@@ -45,6 +45,14 @@ export const internships: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = 
             {
             headline: "Innovation Award",
             article: "Dec 2020, Tomonokai Co.,Ltd.",
+            },
+            {
+            headline: "Winner of company-wide training session",
+            article: "Dec 2019, Tomonokai Co.,Ltd."
+            },
+            {
+                headline: "Rookie of the Year Award",
+                article: "Dec 2019, Tomonokai Co.,Ltd."
             }
         ],
     }

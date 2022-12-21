@@ -33,12 +33,20 @@ export const jobs: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = [
         },
         cp: [
             {
-            headline:"sweeden innovation days",
-            article: "",
+            headline:"Sweden Innovation Days (IGNITE SWEDEN)",
+            article: "[speaker]",
+            urls: {
+                ref: "https://swedeninnovationdays.se/",
+                name: "swedeninnovationdays.se"
+            }
             },
             {
-            headline:"CIC Tokyo",
-            article: "",
+            headline:'"We UNITE !" Powered by T-UNITE',
+            article: "[speaker] Tokyo United Network for Innovation with Technology and Entrepreneurs @CIC TOKYO",
+            urls:{
+                ref: "https://waseda-edge.jp/T-UNITE",
+                name: "waseda-edge.jp/T-UNITE"
+            }
             }
         ],
     }

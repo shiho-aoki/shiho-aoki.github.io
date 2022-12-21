@@ -1,16 +1,23 @@
 <template>
     <Header />
-    <div v-for="paperitem in paper" class="flex items-center justify-center w-5 h-5 mb-4 rounded-full bg-blue-300">
-      <p class="text-sm leading-5 text-gray-900">
-        {{paperitem.number}}.{{paperitem.auther}} <i>{{paperitem.title}}</i>, ({{paperitem.date}}), {{paperitem.publicedBy}}.
-      </p>
-      <p class="text-sm leading-5 text-gray-500">
-        {{paperitem.doi}}
-      </p>
+    <div class="flex items-center justify-center mt-3">
+      <p class="mb-2 text-lg font-bold">Academic Background</p>
     </div>
     <div v-for="school in schools">
       <StepPanel :stepsdata="school.sp" :achivedata="school.cp" />
     </div>
+
+    <div class="flex items-center justify-center">
+      <p class="mb-2 text-lg font-bold">Paper</p>
+    </div>
+    <div v-for="paperitem in paper" class="pt-1 pb-8 mx-8 mb-10">
+      <p class="leading-6 text-gray-900 float-left">
+        {{paperitem.id}}.&nbsp;{{paperitem.auther}},&nbsp;{{paperitem.title}},
+        <i>{{paperitem.publicedBy}}</i>, {{ paperitem.edition}},<b>({{paperitem.number}})</b>, {{paperitem.date}}.
+        <small>DOI: <a :href="paperitem.doi" target="_blank" rel="noopener noreferrer">{{paperitem.doi}}</a></small>
+      </p>
+    </div>
+
 </template>
 
 <script setup lang="ts">
