@@ -1,6 +1,6 @@
 <template>
-    <div class="mx-2 lg:flex lg:items-center lg:justify-between">
-    <div class="min-w-0 flex-1">
+    <div class="mx-2 px-2 lg:flex lg:items-center lg:justify-between border-2 rounded-md">
+    <div class="min-w-0 flex-1 mb-3">
       <div class="mt-1 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
         <a :href="data.typeUrl" target="_blank" rel="noopener noreferrer">
           <div class="mt-2 flex items-center text-sm text-gray-500">
@@ -17,9 +17,9 @@
           {{data.when}}
         </div>
       </div>
-      <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">{{data.title}}</h2>
+      <h2 class="text-2xl leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">{{data.title}}</h2>
     </div>
-    <div class="mt-5 flex lg:mt-0 lg:ml-4">
+    <div class="mt-5 flex lg:mt-0 lg:ml-4 mb-3">
       <span class="ml-3">
         <a :href="data.url" target="_blank" rel="noopener noreferrer">
           <button type="button" class="inline-flex items-center rounded-md border border-transparent bg-blue-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">
@@ -29,7 +29,7 @@
         </a>
       </span>
 
-      <span :v-if="data.published === true" class="sm:ml-3 hidden sm:block">
+      <span v-if="data.published === true" class="sm:ml-3 hidden sm:block">
         <button type="button" class="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
           <CheckIcon class="-ml-1 mr-2 h-5 w-5 text-gray-500" aria-hidden="true" />
           Published

@@ -8,7 +8,7 @@ export const timeline: Array<ITimeline> = [
         typeUrl: noteUrls.lang.cpp,
         where: "note.as-pml.com",
         when: "2022.12.02",
-        url: "https://www.notion.so/ESCR-C-d02c0ea8862041a18598d3c17ea68fd4",
+        url: "https://note.as-pml.com/ESCR-C-d02c0ea8862041a18598d3c17ea68fd4",
         published: false
     },
     {
