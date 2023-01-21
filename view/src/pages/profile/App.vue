@@ -4,6 +4,8 @@
     <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         <span class="block">shiho-aoki @as.+?pml</span>
+        <img src="https://github-readme-stats.vercel.app/api?username=shiho-aoki&count_private=true&show_icons=true" 
+              class="h-auto w-full my-3" />
         <span class="text-lg font-semibold leading-8 text-blue-500">If I have seen further it is by standing on yᵉ sholders of Giants.</span>
       </h2>
       <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
@@ -31,9 +33,13 @@
     </div>
   </div>
 
-  <div class="justify-center mt-10 mb-6 2xl:mx-52 xl:mx-44 lg:mx-32 sm:mx-10 lg:px-20">
-    <img src="https://github-readme-stats.vercel.app/api?username=shiho-aoki&count_private=true&show_icons=true" 
-        class="h-auto w-full object-cover object-center" />
+
+  <div class="mx-3 ml-2 pl-10 lg:mt-20 mt-10 flex">
+      <!-- <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shiho-aoki&theme=github_dark" 
+           class="h-auto w-full object-cover object-center"/> -->
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shiho-aoki&theme=github_dark" />
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=shiho-aoki&theme=github_dark" />
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=shiho-aoki&theme=github_dark&utcOffset=9" />
   </div>
   <!-- <div class="mx-32 px-32">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shiho-aoki&count_private=true&hide=jupyter%20notebook,html,CSS,Makefile&langs_count=11&layout=compact" 
