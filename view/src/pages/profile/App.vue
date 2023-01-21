@@ -34,12 +34,20 @@
   </div>
 
 
-  <div class="mx-3 ml-2 pl-10 lg:mt-20 mt-10 flex">
-      <!-- <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shiho-aoki&theme=github_dark" 
+  <div class="flex justify-center mt-10">
+    <div class="grid grid-cols-2 gap-4">
+    <!-- <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shiho-aoki&theme=github_dark" 
            class="h-auto w-full object-cover object-center"/> -->
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shiho-aoki&theme=github_dark" />
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=shiho-aoki&theme=github_dark" />
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=shiho-aoki&theme=github_dark&utcOffset=9" />
+      <div class="col-span-2">
+        <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shiho-aoki&theme=github_dark" />
+      </div>
+      <div>
+        <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=shiho-aoki&theme=github_dark" />
+      </div>
+      <div>
+        <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=shiho-aoki&theme=github_dark&utcOffset=9" />
+      </div>
+    </div>
   </div>
   <!-- <div class="mx-32 px-32">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shiho-aoki&count_private=true&hide=jupyter%20notebook,html,CSS,Makefile&langs_count=11&layout=compact" 
