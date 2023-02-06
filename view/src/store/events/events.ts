@@ -29,13 +29,17 @@ export const events: Array<{sp: IEventSetpPanel, cp: Array<IContentesPanel>}> = 
         },
         cp: [
             {
-            headline: "string",
-            article: "string",
+                headline: "AWS re:Invent",
+                article: "2022-01-27 ~ 28 [audience]",
+                urls: {
+                    ref: "https://note.as-pml.com/AWS-Game-Technology-c0ae013643754db1804176018dbf2a7d",
+                    name: "AWS Came Technology",
+                },
             },
             {
-            headline: "string",
-            article: "string",
-            }
+                headline: "AWS Cloud Session",
+                article: "2022-03-08 ~ 10",
+            },
         ],
     }
 ]
