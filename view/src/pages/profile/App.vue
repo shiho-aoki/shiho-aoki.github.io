@@ -17,6 +17,18 @@
         <span class="text-lg font-semibold text-blue-500">
           If I have seen further it is by standing on yᵉ sholders of Giants.
         </span>
+        <span class="mt-2 flex">
+          <div class="ml-3 inline-flex items-center">
+            <a :href="url.other.github">
+            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white ml-2" 
+                  src="../../assets/img/sns/github.png" alt="GitHub" />
+            </a>
+            <a :href="url.other.linkedin">
+            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white ml-2" 
+                  src="../../assets/img/sns/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </span>
       </h2>
       <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
         <div class="inline-flex rounded-md shadow">
@@ -60,42 +72,56 @@
               </Tab>
             </TabList>
             <TabPanels class="mt-2">
+              <!-- About Me -->
               <TabPanel
-                v-for="(posts, idx) in Object.values(categories)"
-                :key="idx"
+                :class="[
+                  'rounded-xl bg-white p-3',
+                  'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
+                ]">
+                a
+              </TabPanel>
+              <!-- About Me -->
+
+              <!-- Experience -->
+              <TabPanel
+                :class="[
+                  'rounded-xl bg-white p-3',
+                  'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
+                ]">
+                b
+              </TabPanel>
+              <!-- Experience -->
+
+              <!-- Education -->
+              <TabPanel
+                :class="[
+                  'rounded-xl bg-white p-3',
+                  'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
+                ]">
+                c
+              </TabPanel>
+              <!-- Education -->
+              
+              <TabPanel
+                :class="[
+                  'rounded-xl bg-white p-3',
+                  'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
+                ]">
+                d
+              </TabPanel>
+              <TabPanel
+                :class="[
+                  'rounded-xl bg-white p-3',
+                  'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
+                ]">
+                e
+              </TabPanel>
+              <TabPanel
                 :class="[
                   'rounded-xl bg-white p-3',
                   'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
-                ]"
-              >
-                <ul>
-                  <li
-                    v-for="post in posts"
-                    :key="post.id"
-                    class="relative rounded-md p-3 hover:bg-gray-100"
-                  >
-                    <h3 class="text-sm font-medium leading-5">
-                      {{ post.title }}
-                    </h3>
-
-                    <ul
-                      class="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500"
-                    >
-                      <li>{{ post.date }}</li>
-                      <li>&middot;</li>
-                      <li>{{ post.commentCount }} comments</li>
-                      <li>&middot;</li>
-                      <li>{{ post.shareCount }} shares</li>
-                    </ul>
-                    <a
-                      href="#"
-                      :class="[
-                        'absolute inset-0 rounded-md',
-                        'ring-blue-400 focus:z-10 focus:outline-none focus:ring-2',
-                      ]"
-                    />
-                  </li>
-                </ul>
+                ]">
+                f
               </TabPanel>
             </TabPanels>
           </TabGroup>
@@ -167,6 +193,7 @@
 
   <!-- <div class="justify-center mb-6 lg:mx-32 sm:mx-3">
     <LicenssesAndCertifications />
+    <a target="_blank" href="https://icons8.com/icon/60451/twitter-(%E4%B8%B8%E5%9E%8B)">Twitter (丸型)</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
   </div> -->
   
   <Footter />

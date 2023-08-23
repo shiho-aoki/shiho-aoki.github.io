@@ -11,6 +11,7 @@ export const urls = {
       qiita: "https://qiita.com/as_pml",
       zenn: "https://zenn.dev/as_pml",
       github: "https://github.com/shiho-aoki",
+      linkedin: "https://www.linkedin.com/in/shiho-aoki-404236207",
       events: "/events"
     }
 }
