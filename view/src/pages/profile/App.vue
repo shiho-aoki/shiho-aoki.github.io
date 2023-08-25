@@ -5,8 +5,11 @@
       <h2 class="text-4xl tracking-tight text-gray-900 sm:text-5xl text-align: center">
         <span class="block">shiho aoki</span>
         <h3 class="mt-2 flex text-sm text-gray-500">
-          早稲田大学先進理工学研究科 一貫制博士課程<br>
-          IATD. Co., Ltd.(株式会社 先端技術開発研究所) CTO
+          Doctor-s Degree, Biomedical Engineering @ Waseda University, Japan<br />
+          IATD. Co., Ltd. Chief Technology Officer<br />
+          ---<br />
+          早稲田大学先進理工学研究科 一貫制博士課程<br />
+          株式会社 先端技術開発研究所 最高技術責任者
         </h3>
         <span class="mt-2 flex text-sm text-gray-500">
           <TagIcon class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
@@ -26,6 +29,10 @@
             <a :href="url.other.linkedin">
             <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white ml-2" 
                   src="../../assets/img/sns/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a :href="url.other.qiita">
+            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white ml-2" 
+                  src="../../assets/img/sns/qiita.png" alt="Quita" />
             </a>
           </div>
         </span>
@@ -78,7 +85,8 @@
                   'rounded-xl bg-white p-3',
                   'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
                 ]">
-                a
+                Doctoral Student at Waseda University(Molecular Evolution / Biophysical Engineering), <br />
+                Systems Engineer, Product Manager, Chief Technology Officer@IATD.Co.,Ltd.
               </TabPanel>
               <!-- About Me -->
 
@@ -101,7 +109,7 @@
                 c
               </TabPanel>
               <!-- Education -->
-              
+
               <TabPanel
                 :class="[
                   'rounded-xl bg-white p-3',
