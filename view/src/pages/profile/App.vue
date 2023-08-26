@@ -1,8 +1,9 @@
+
 <template>
   <Header />
   <div class="bg-gray-100">
     <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
-      <h2 class="text-4xl tracking-tight text-gray-900 sm:text-5xl text-align: center">
+      <h2 class="text-3xl tracking-tight text-gray-900 sm:text-4xl">
         <span class="block">shiho aoki</span>
         <h3 class="mt-2 flex text-sm text-gray-500">
           Doctor-s Degree, Biomedical Engineering @ Waseda University, Japan<br />
@@ -15,26 +16,26 @@
           <TagIcon class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
           Biotechnology, Development, Computer Science - Software Engineering, Research and Develoment
         </span>
-        <!-- <img src="https://github-readme-stats.vercel.app/api?username=shiho-aoki&count_private=true&show_icons=true" 
+        <!-- <img src="https://github-readme-stats.vercel.app/api?username=shiho-aoki&count_private=true&show_icons=true"
               class="h-auto w-full my-3" /> -->
         <span class="text-lg font-semibold text-blue-500">
           If I have seen further it is by standing on yᵉ sholders of Giants.
         </span>
-        <span class="mt-2 flex">
-          <div class="ml-3 inline-flex items-center">
+        <span class="mt-2 flex text-sm">
+          <span class="ml-3 inline-flex items-center">
             <a :href="url.other.github">
-            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white ml-2" 
+            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white ml-2"
                   src="../../assets/img/sns/github.png" alt="GitHub" />
             </a>
             <a :href="url.other.linkedin">
-            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white ml-2" 
+            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white ml-2"
                   src="../../assets/img/sns/linkedin.png" alt="LinkedIn" />
             </a>
             <a :href="url.other.qiita">
-            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white ml-2" 
+            <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white ml-2"
                   src="../../assets/img/sns/qiita.png" alt="Quita" />
             </a>
-          </div>
+          </span>
         </span>
       </h2>
       <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
@@ -53,12 +54,13 @@
       </div>
     </div>
   </div>
-  <div calss="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
+  
+  <div class="mx-auto max-w-8xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
     <div class="px-4">
-      <span class="mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-        <div class="py-16 sm:px-0">
+      <span class="mt-2 max-w-2xl text-xl leading-8 text-gray-600">
+        <div class="py-0 sm:px-0">
           <TabGroup>
-            <TabList class="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
+            <TabList class="flex space-x-2 rounded-xl bg-blue-900/20 p-1">
               <Tab
                 v-for="category in Object.keys(categories)"
                 as="template"
@@ -67,7 +69,7 @@
               >
                 <button
                   :class="[
-                    'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
+                    'w-full rounded-lg py-2.5 text-sm font-medium text-lg leading-5 text-blue-700',
                     'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
                     selected
                       ? 'bg-white shadow'
@@ -80,73 +82,26 @@
             </TabList>
             <TabPanels class="mt-2">
               <!-- About Me -->
-              <TabPanel
-                :class="[
-                  'rounded-xl bg-white p-3',
-                  'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
-                ]">
-                Doctoral Student at Waseda University(Molecular Evolution / Biophysical Engineering), <br />
-                Systems Engineer, Product Manager, Chief Technology Officer@IATD.Co.,Ltd.
-              </TabPanel>
-              <!-- About Me -->
-
+              <AboutMe />
               <!-- Experience -->
-              <TabPanel
-                :class="[
-                  'rounded-xl bg-white p-3',
-                  'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
-                ]">
-                b
-              </TabPanel>
-              <!-- Experience -->
-
+              <AboutMe />
               <!-- Education -->
-              <TabPanel
-                :class="[
-                  'rounded-xl bg-white p-3',
-                  'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
-                ]">
-                c
-              </TabPanel>
-              <!-- Education -->
-
-              <TabPanel
-                :class="[
-                  'rounded-xl bg-white p-3',
-                  'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
-                ]">
-                d
-              </TabPanel>
-              <TabPanel
-                :class="[
-                  'rounded-xl bg-white p-3',
-                  'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
-                ]">
-                e
-              </TabPanel>
-              <TabPanel
-                :class="[
-                  'rounded-xl bg-white p-3',
-                  'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
-                ]">
-                f
-              </TabPanel>
+              <AboutMe />
+              <AboutMe />
+              <AboutMe />
+              <AboutMe />
             </TabPanels>
           </TabGroup>
         </div>
       </span>
     </div>
   </div>
-
-
   <!-- <div class="flex justify-center mt-10">
     <div class="grid grid-cols-2 gap-4"> -->
-
     <!-- Did not use -->
-    <!-- <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shiho-aoki&theme=github_dark" 
+    <!-- <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shiho-aoki&theme=github_dark"
            class="h-auto w-full object-cover object-center"/> -->
     <!-- Did not use -->
-
       <!-- <div class="col-span-2">
         <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shiho-aoki&theme=github_dark" />
       </div>
@@ -158,14 +113,12 @@
       </div>
     </div>
   </div> -->
-
   <!-- Did not use -->
   <!-- <div class="mx-32 px-32">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shiho-aoki&count_private=true&hide=jupyter%20notebook,html,CSS,Makefile&langs_count=11&layout=compact" 
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shiho-aoki&count_private=true&hide=jupyter%20notebook,html,CSS,Makefile&langs_count=11&layout=compact"
         class="h-auto w-full object-cover object-center" />
   </div> -->
   <!-- Did not use -->
-
   <!-- <div class="bg-white py-24 sm:py-32 lg:py-40">
     <div class="mx-auto max-w-7xl px-6 lg:px-8 content-center">
       <div class="sm:text-center">
@@ -180,13 +133,11 @@
     </div>
   </div>
   <Skills /> -->
-
   <!-- <div class="bg-white py-24 sm:py-32 lg:py-40">
     <div class="mx-auto max-w-7xl px-6 lg:px-8 content-center">
       <div class="sm:text-center">
         <h2 class="text-lg font-semibold leading-8 text-blue-500">since 2017.</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Licenses and Certifications</p> -->
-
         <!-- Did not use -->
         <!-- <div class="flex justify-center mt-4">
           <a :href="url.other.github" target="_blank" rel="noopener noreferrer">
@@ -194,19 +145,15 @@
           </a>
         </div> -->
         <!-- Did not use -->
-
       <!-- </div>
     </div>
   </div> -->
-
   <!-- <div class="justify-center mb-6 lg:mx-32 sm:mx-3">
     <LicenssesAndCertifications />
     <a target="_blank" href="https://icons8.com/icon/60451/twitter-(%E4%B8%B8%E5%9E%8B)">Twitter (丸型)</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
   </div> -->
-  
   <Footter />
 </template>
-
 <script lang="ts">
 import Header from '../../components/Header.vue';
 import Footter from '../../components/Footter.vue';
@@ -217,7 +164,7 @@ import { myprofile } from '../../store/profile/myprofile';
 import { ref } from 'vue';
 import { TagIcon } from '@heroicons/vue/24/outline';
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
-
+import AboutMe from './tab/aboutme.vue';
 export default {
   name: 'Profile',
   setup(){
@@ -230,6 +177,7 @@ export default {
   },
   components: {
     Header,
+    AboutMe,
     Skills,
     LicenssesAndCertifications,
     Footter,

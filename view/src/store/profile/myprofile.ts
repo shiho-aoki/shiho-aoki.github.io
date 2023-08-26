@@ -63,8 +63,8 @@ export const myprofile = {
         shareCount: 12,
       },
     ],
-    "Licenses & certifications, Skills":[],
-    "Community Notes": [
+    "Licenses & Certifications":[],
+    "Community": [
       {
         id: 1,
         title: 'Ask Me Anything: 10 answers to your questions about coffee',
