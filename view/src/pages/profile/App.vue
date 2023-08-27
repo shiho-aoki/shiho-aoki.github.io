@@ -152,13 +152,12 @@
     <LicenssesAndCertifications />
     <a target="_blank" href="https://icons8.com/icon/60451/twitter-(%E4%B8%B8%E5%9E%8B)">Twitter (丸型)</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
   </div> -->
+
   <Footter />
 </template>
 <script lang="ts">
 import Header from '../../components/Header.vue';
 import Footter from '../../components/Footter.vue';
-import Skills from './Skills.vue';
-import LicenssesAndCertifications from './LicenssesAndCertifications.vue'
 import { urls } from '../../store/urls';
 import { myprofile } from '../../store/profile/myprofile';
 import { ref } from 'vue';
@@ -178,8 +177,6 @@ export default {
   components: {
     Header,
     AboutMe,
-    Skills,
-    LicenssesAndCertifications,
     Footter,
     TagIcon, TabGroup, TabList, Tab, TabPanels, TabPanel
   }

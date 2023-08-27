@@ -6,6 +6,7 @@ export const urls = {
       overview: "/",
       academic: "/academic",
       business: "/business",
+      skills: "https://note.as-pml.com/Tech-Note-ddfa6ad356794759a48d6239a4e29954",
     },
     other: {
       qiita: "https://qiita.com/as_pml",
