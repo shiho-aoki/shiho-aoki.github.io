@@ -13,6 +13,16 @@ interface Ipaper {
 
 export const paper: Array<Ipaper> = [
     {
+        id: 2,
+        auther: "Wataru Onodera, Nobuyuki Hara, Shiho Aoki, Toru Asahi, Naoya Sawamura",
+        title: " Data on the solution and processing time reached when constructing a phylogenetic tree using a quantum-inspired computer",
+        date: "2023",
+        publicedBy: "Data in Brief",
+        edition: 108970,
+        number: 47,
+        doi: "https://doi.org/10.1016/j.dib.2023.108970",
+    },
+    {
         id: 1,
         auther: "Wataru Onodera, Nobuyuki Harab, Shiho Aoki, Toru Asahia, Naoya Sawamura",
         title: "Phylogenetic tree reconstruction via graph cut presented using a quantum-inspired computer",
@@ -36,15 +46,16 @@ export const schools: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = [
                 },
                 {
                 step: "Waseda University",
-                position: "Advanced Science and Engineering",
-                context: "Department of Biomedical Sciences, Asahi Lab",
+                position: "Bachelor of Science-BS, Biomedical Engineering, Advanced Science and Engineering Dep.",
+                context: "Department of Biomedical Sciences, Asahi Lab. Skills: Quantum Computing · Alzheimer's Disease · Engineering · Molecular Biology",
                 time: "2019.04-2023.03",
                 },
                 {
                 step: "Waseda University",
-                position: "full-term doctoral program",
-                context: "School of Advanced Science and Engineering",
-                time: "2023.03-",
+                position: "Doctor's Degree, Biomedical Engineering",
+                context: "  My Research Keywords: molecular evolution, E3 ubiquitin ligase, Alzheimer's disease, molecular dynamics simulation (MD), quantum annealing,  \
+                            School of Advanced Science and Engineering, Asahi Lab",
+                time: "2023.03-2028.03*",
                 },
             ],
             end: ""

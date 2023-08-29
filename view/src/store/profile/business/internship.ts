@@ -6,20 +6,20 @@ export const internships: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = 
             steps: [
                 {
                 step: "MAISON MARC inc.",
-                position: "AI Engineer",
+                position: "Machine Learning Engineer",
                 context: "",
-                time: "2019.11-2020.03",
+                time: "2019.11-2020.03 (6 mos)",
                 },
                 {
                 step: "Orario",
-                position: "Marketing",
-                context: "",
-                time: "2020.03-2020.09",
+                position: "Marketing Staff",
+                context: "Skills: Marketing · Social Media Marketing",
+                time: "2020.03-2020.09 (4 mos)",
                 },
                 {
                 step: "VOYAGE GROUP (current: CARTA HOLDINGS)",
-                position: "tresure(Internship)",
-                context: "",
+                position: "Tresure",
+                context: "2weeks Student Internship, using Golang, TypeScript, PostgreSQL and Docker",
                 time: "2021.08",
                 },
                 {
@@ -31,8 +31,8 @@ export const internships: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = 
                 {
                 step: "AVILEN",
                 position: "course maneger",
-                context: "",
-                time: "2020.02-present",
+                context: "Skills: Artificial Intelligence (AI) · PyTorch · Customer Service · TensorFlow · Python (Programming Language)",
+                time: "2020.02-2023.03 (3 yrs 2 mos)",
                 }
             ],
             end: ""

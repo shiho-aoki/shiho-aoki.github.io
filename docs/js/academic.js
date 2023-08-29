@@ -40,16 +40,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue_
 
 /***/ }),
 
-/***/ "./src/store/profile/academic/univ.ts":
-/*!********************************************!*\
-  !*** ./src/store/profile/academic/univ.ts ***!
-  \********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"paper\": function() { return /* binding */ paper; },\n/* harmony export */   \"schools\": function() { return /* binding */ schools; }\n/* harmony export */ });\nconst paper = [{\n  id: 1,\n  auther: \"Wataru Onodera, Nobuyuki Harab, Shiho Aoki, Toru Asahia, Naoya Sawamura\",\n  title: \"Phylogenetic tree reconstruction via graph cut presented using a quantum-inspired computer\",\n  date: \"2023\",\n  publicedBy: \"Molecular Phylogenetics and Evolution\",\n  edition: 107636,\n  number: 178,\n  doi: \"https://doi.org/10.1016/j.ympev.2022.107636\"\n}];\nconst schools = [{\n  sp: {\n    steps: [{\n      step: \"Waseda University Honjo Senior High School\",\n      position: \"general cource\",\n      context: \"\",\n      time: \"2016.04-2019.03\"\n    }, {\n      step: \"Waseda University\",\n      position: \"Advanced Science and Engineering\",\n      context: \"Department of Biomedical Sciences, Asahi Lab\",\n      time: \"2019.04-2023.03\"\n    }, {\n      step: \"Waseda University\",\n      position: \"full-term doctoral program\",\n      context: \"School of Advanced Science and Engineering\",\n      time: \"2023.03-\"\n    }],\n    end: \"\"\n  },\n  cp: [{\n    headline: \"WASEDA-EDGE Human Resource Development Programs\",\n    article: \"\",\n    // 2019年4月13日～2019年7月13日　ブロックチェーン教育研究講座（早稲田大学グローバル科学知融合研究所主催、WASEDA-EDGE人材育成プログラム協賛）\\\n    // 2019年6月8~9日　人工知能セミナー入門編ブートキャンプ\\\n    // 2019年12月14~15日　人工知能セミナー実践編ブートキャンプ\\\n    // 2021年11月14日　起業のファイナンス基礎講座\\\n    // 2021年11月21日　グローバルスタートアップのための英語基礎セミナー\\\n    // 2021年11月27日　ファイナンスセミナー実践編：スタートアップに必要な金融・資本戦略\\\n    // 2021年12月05日　ビジネスモデル構築セミナー\\\n    // 2022年01月7~9日　Boot Camp for Mastering Dabate and Negotiation in English\\\n    // 2022年02月22日~3月12日　Micro MBA\",\n    urls: {\n      ref: \"https://waseda-edge.jp/\",\n      name: \"waseda-edge.jp/\"\n    }\n  }, {\n    headline: \"Ministry of Education, Culture, Sports, Science and Technology (MEXT) Entrepreneurship Development Overseas Samurai Training Program\",\n    article: \"\",\n    urls: {\n      ref: \"https://waseda-edge.jp/event_detail_2020?id=mushashugyo\",\n      name: \"waseda-edge.jp\"\n    }\n  }]\n}];\n\n//# sourceURL=webpack://view/./src/store/profile/academic/univ.ts?");
-
-/***/ }),
-
 /***/ "./src/pages/academic/App.vue":
 /*!************************************!*\
   !*** ./src/pages/academic/App.vue ***!

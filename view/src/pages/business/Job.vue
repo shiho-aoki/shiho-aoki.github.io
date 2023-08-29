@@ -1,6 +1,7 @@
 <template>
   <div v-for="job in jobs">
-    <StepPanel :stepsdata="job.sp" :achivedata="job.cp" />
+    <!-- <StepPanel :stepsdata="job.sp" :achivedata="job.cp" /> -->
+    <StepPanel :stepsdata="job.sp" />
   </div>
 </template>
 
