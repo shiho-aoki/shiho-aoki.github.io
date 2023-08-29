@@ -1195,17 +1195,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./node_modules/@heroicons/vue/20/solid/esm/PaperClipIcon.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@heroicons/vue/20/solid/esm/PaperClipIcon.js ***!
-  \*******************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ render; }\n/* harmony export */ });\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n\nfunction render(_ctx, _cache) {\n  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(\"svg\", {\n    xmlns: \"http://www.w3.org/2000/svg\",\n    viewBox: \"0 0 20 20\",\n    fill: \"currentColor\",\n    \"aria-hidden\": \"true\"\n  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)(\"path\", {\n    \"fill-rule\": \"evenodd\",\n    d: \"M15.621 4.379a3 3 0 00-4.242 0l-7 7a3 3 0 004.241 4.243h.001l.497-.5a.75.75 0 011.064 1.057l-.498.501-.002.002a4.5 4.5 0 01-6.364-6.364l7-7a4.5 4.5 0 016.368 6.36l-3.455 3.553A2.625 2.625 0 119.52 9.52l3.45-3.451a.75.75 0 111.061 1.06l-3.45 3.451a1.125 1.125 0 001.587 1.595l3.454-3.553a3 3 0 000-4.242z\",\n    \"clip-rule\": \"evenodd\"\n  })]);\n}\n\n//# sourceURL=webpack://view/./node_modules/@heroicons/vue/20/solid/esm/PaperClipIcon.js?");
-
-/***/ }),
-
 /***/ "./node_modules/@heroicons/vue/20/solid/esm/PlayIcon.js":
 /*!**************************************************************!*\
   !*** ./node_modules/@heroicons/vue/20/solid/esm/PlayIcon.js ***!

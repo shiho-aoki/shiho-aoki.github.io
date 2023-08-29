@@ -81,13 +81,10 @@
               </Tab>
             </TabList>
             <TabPanels class="mt-2">
-              <!-- About Me -->
               <AboutMe />
-              <!-- Experience -->
-              <AboutMe />
-              <!-- Education -->
-              <AboutMe />
-              <AboutMe />
+              <Experience />
+              <Education />
+              <Publications />
               <AboutMe />
               <AboutMe />
             </TabPanels>
@@ -163,7 +160,12 @@ import { myprofile } from '../../store/profile/myprofile';
 import { ref } from 'vue';
 import { TagIcon } from '@heroicons/vue/24/outline';
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
+
 import AboutMe from './tab/aboutme.vue';
+import Experience from './tab/experience.vue';
+import Education from './tab/education.vue';
+import Publications from './tab/publications.vue';
+
 export default {
   name: 'Profile',
   setup(){
@@ -176,7 +178,7 @@ export default {
   },
   components: {
     Header,
-    AboutMe,
+    AboutMe, Experience,Education,Publications,
     Footter,
     TagIcon, TabGroup, TabList, Tab, TabPanels, TabPanel
   }
