@@ -85,8 +85,8 @@
               <Experience />
               <Education />
               <Publications />
-              <AboutMe />
-              <AboutMe />
+              <Licenses />
+              <Community />
             </TabPanels>
           </TabGroup>
         </div>
@@ -165,6 +165,8 @@ import AboutMe from './tab/aboutme.vue';
 import Experience from './tab/experience.vue';
 import Education from './tab/education.vue';
 import Publications from './tab/publications.vue';
+import Licenses from './tab/licenses.vue';
+import Community from './tab/community.vue';
 
 export default {
   name: 'Profile',
@@ -178,7 +180,7 @@ export default {
   },
   components: {
     Header,
-    AboutMe, Experience,Education,Publications,
+    AboutMe, Experience,Education,Publications,Licenses,Community,
     Footter,
     TagIcon, TabGroup, TabList, Tab, TabPanels, TabPanel
   }
