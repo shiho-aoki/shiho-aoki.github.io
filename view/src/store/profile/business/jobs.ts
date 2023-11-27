@@ -8,7 +8,7 @@ export const jobs: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = [
                     step: "EAGLYS Inc.",
                     position: "Software engineer/Developer・Permanent",
                     context: "Skills: Software Development · Go (Programming Language) · React.js · Keras · TensorFlow · Amazon Web Services (AWS) · Microsoft Azure · Programming · Python (Programming Language) · C++",
-                    time: "2020.03-present",
+                    time: "2019.03-present",
                 },
                 {
                     step: "Waseda University",
