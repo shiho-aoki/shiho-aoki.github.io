@@ -1,7 +1,6 @@
-const { defineConfig } = require("@vue/cli-service");
-module.exports = defineConfig({
+module.exports = {
   outputDir: '../docs',
-  transpileDependencies: true,
+  transpileDependencies: [],
   lintOnSave: false,
   pages: {
     top: {
@@ -41,4 +40,4 @@ module.exports = defineConfig({
       title: 'shiho-aoki | activity'
     },
   },
-});
+};
