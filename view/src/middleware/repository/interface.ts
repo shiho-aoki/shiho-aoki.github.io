@@ -1,3 +1,4 @@
+import { IEducation } from "../db/interface";
 import { model } from "../db/model"
 import { DocumentData } from "@firebase/firestore";
 
@@ -6,5 +7,5 @@ export interface MPaper {
 }
 
 export interface MEdu {
-    getAll: () => Promise<DocumentData[] | null>
+    getAll: () => Promise<IEducation[] | null>
 }

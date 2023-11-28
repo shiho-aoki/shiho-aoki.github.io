@@ -51,7 +51,7 @@
   
   <script setup lang="ts">
   //import ContentesPanel from './ContentesPanel.vue';
-  import { ISetpPanel, IContentesPanel } from "./interface/panel";
+  import { ISetpPanel, IContentesPanel } from "../interface/panel";
   import { CalendarDaysIcon, ViewfinderCircleIcon } from "@heroicons/vue/20/solid"
 
   // defineProps<{stepsdata: ISetpPanel, achivedata: Array<IContentesPanel>}>();

@@ -118,24 +118,21 @@
   </Popover>
 </template>
 <script setup lang="ts">
-import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/vue'
+import { Popover } from '@headlessui/vue';
+import { ref } from 'vue';
 
 import {
   AtSymbolIcon,
-  Bars3Icon,
   BookmarkSquareIcon,
   CalendarIcon,
   AcademicCapIcon,
   CheckIcon,
   EnvelopeIcon,
-  XMarkIcon,
-  LinkIcon
 } from '@heroicons/vue/24/outline';
-import { ChevronDownIcon } from '@heroicons/vue/20/solid';
 
 import { urls } from '../store/urls';
 
-const profile = [
+const profile = ref([
       {
         name: 'overview',
         description: 'skills, licenses and certifications',
@@ -154,8 +151,8 @@ const profile = [
           href: urls.profile.business,
           icon: CheckIcon 
       }
-    ];
-const resources = 
+    ]);
+const resources = ref(
     [
       {
         name: 'Qiita',
@@ -177,5 +174,6 @@ const resources =
         href: urls.other.events,
         icon: CalendarIcon,
       },
-    ];
+    ]
+);
 </script>

@@ -69,7 +69,7 @@ import {
   PlayIcon
 } from '@heroicons/vue/20/solid'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue';
-import { ITimeline } from './interface/timeline';
+import { ITimeline } from '../interface/timeline';
 
 defineProps<{data: ITimeline}>();
 

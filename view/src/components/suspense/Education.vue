@@ -1,6 +1,6 @@
 <template>
     <div v-for="school in schools">
-      <StepPanel :stepsdata="school.sp" :achivedata="school.cp" />
+      <StepPanel :stepsdata="school" />
     </div>
 </template>
 

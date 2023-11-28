@@ -33,7 +33,7 @@
 </template>
   
 <script setup lang="ts">
-import { IContentesPanel } from "./interface/panel";
+import { IContentesPanel } from "../interface/panel";
 import { LinkIcon } from '@heroicons/vue/20/solid'
 defineProps<{achivedata: Array<IContentesPanel>}>();
 </script>
