@@ -30,9 +30,9 @@ export class FirestoreService {
 
     async readall(): Promise<DocumentData | null>{
         let rdata: Array<DocumentData | null> = [];
-        const querySnapshot = await getDocs(collection(this.db, "cities"));
+        const querySnapshot = await getDocs(collection(this.db, this.dbname));
         querySnapshot.forEach((doc) => {
-          rdata.push(doc.data());
+            rdata.push(doc.data());
         });
         return rdata;
     }

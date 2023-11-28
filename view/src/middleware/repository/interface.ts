@@ -1,5 +1,10 @@
 import { model } from "../db/model"
+import { DocumentData } from "@firebase/firestore";
 
 export interface MPaper {
-    getAll: () => Array<typeof model.acad.paper.i> | void
+    getAll: () => Promise<DocumentData[] | null>
+}
+
+export interface MEdu {
+    getAll: () => Promise<DocumentData[] | null>
 }

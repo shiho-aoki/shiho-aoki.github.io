@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "builds": "vue-cli-service build && cp /usr/app/CNAME /usr/app/docs/CNAME",
+    "build": "vue-cli-service build && cp /usr/app/CNAME /usr/app/docs/CNAME",
     "lint": "vue-cli-service lint",
     "format": "prettier --write src/",
     "vin": "vue inspect"

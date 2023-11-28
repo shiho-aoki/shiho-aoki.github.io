@@ -4,8 +4,8 @@ import { model } from '../db/model';
 
 import { DocumentData } from "@firebase/firestore";
 
-export const getAllPaper = async() => {
-    const dpaper = new FirestoreService(db, model.acad.paper.name);
+export const getAllEdu = async() => {
+    const dpaper = new FirestoreService(db, model.acad.education.name);
     const res = await dpaper.readall();
     if(res==null) return null;
 

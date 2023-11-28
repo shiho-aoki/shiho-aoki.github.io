@@ -1,6 +1,11 @@
-import { MPaper } from './interface';
-import { getAll } from './paper';
+import { MPaper,  MEdu} from './interface';
+import { getAllPaper } from './paper';
+import { getAllEdu } from './edu';
 
 export const rpaper: MPaper = {
-    getAll: getAll,
+    getAll: getAllPaper,
+}
+
+export const redu: MEdu = {
+    getAll: getAllEdu,
 }
