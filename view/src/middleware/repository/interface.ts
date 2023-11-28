@@ -1,11 +1,13 @@
-import { IEducation } from "../db/interface";
-import { model } from "../db/model"
 import { DocumentData } from "@firebase/firestore";
 
+interface IfirebaseService {
+    IgetAll : () => Promise<DocumentData[] | null>
+}
+
 export interface MPaper {
-    getAll: () => Promise<DocumentData[] | null>
+    getAll: IfirebaseService['IgetAll']
 }
 
 export interface MEdu {
-    getAll: () => Promise<IEducation[] | null>
+    getAll: IfirebaseService['IgetAll']
 }
