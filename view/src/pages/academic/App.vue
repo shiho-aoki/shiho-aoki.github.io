@@ -12,8 +12,8 @@
     </div>
     <div v-for="paperitem in paper" class="pt-1 pb-8 mx-8 mb-10">
       <p class="leading-6 text-gray-900 float-left">
-        {{paperitem.id}}.&nbsp;{{paperitem.auther}},&nbsp;{{paperitem.title}},
-        <i>{{paperitem.publicedBy}}</i>, {{ paperitem.edition}},<b>({{paperitem.number}})</b>, {{paperitem.date}}.
+        {{paperitem.id}}.&nbsp;{{paperitem.author}},&nbsp;{{paperitem.title}},
+        <i>{{paperitem.publishedBy}}</i>, {{ paperitem.edition}},<b>({{paperitem.number}})</b>, {{paperitem.date}}.
         <small>DOI: <a :href="paperitem.doi" target="_blank" rel="noopener noreferrer">{{paperitem.doi}}</a></small>
       </p>
     </div>
@@ -23,5 +23,9 @@
 <script setup lang="ts">
 import Header from '../../components/Header.vue';
 import StepPanel from "../../components/StepPanel.vue";
-import { paper, schools } from "@/store/profile/academic/univ";
+import { schools } from "@/store/profile/academic/univ";
+
+import { rpaper } from '../../middleware/repository' ;
+const paper =  rpaper.getAll()
+console.log(paper)
 </script>

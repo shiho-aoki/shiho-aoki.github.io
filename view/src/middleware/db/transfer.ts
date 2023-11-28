@@ -28,10 +28,20 @@ function extractDatesFromString(str: string) {
 
 export const transferNewDataSets = async() => {
   //paper
-  // for (let i=0; i<paper.length; i++){
-  //   const docRef = await addDoc(collection(db, "paper"), paper[i]);
-  //   console.log("@paper Document written with ID: ", docRef.id);
-  // }
+  for (let i=0; i<paper.length; i++){
+    let data = {
+      id: paper[i].id,
+      author: paper[i].auther,
+      title: paper[i].title,
+      date: paper[i].date,
+      publishedBy: paper[i].publicedBy,
+      edition: paper[i].edition,
+      number: paper[i].number,
+      doi: paper[i].doi
+    }
+    const docRef = await addDoc(collection(db, "paper"), data);
+    console.log("@paper Document written with ID: ", docRef.id);
+  }
   
   // //conference
   // const docRef = await addDoc(collection(db, "conference"), {
@@ -114,46 +124,46 @@ export const transferNewDataSets = async() => {
   //   console.log("@School Document written with ID: ", docRef.id);
   // }
 
-  //internship
-  const internshipitems = internships[0].sp.steps
-  for (let i=0; i<internshipitems.length; i++){
-    //let fulldata = extractDatesFromString(internshipitems[i].time);
-    let data = {
-      id: i,
-      companyname: internshipitems[i].step,
-      position: internshipitems[i].position,
-      context:internshipitems[i].context,
-      time: internshipitems[i].time,
-    };
-    const docRef = await addDoc(collection(db, 'exprience_inter'), data);
-    console.log("@internship Document written with ID: ", docRef.id);
-  }
-  //job
-  const jobi = jobs[0].sp.steps;
-  for (let i=0; i<jobi.length; i++){
-    let fulldata = extractDatesFromString(jobi[i].time);
-    let data = {
-      id: i,
-      companyname:jobi[i].step,
-      position: jobi[i].position,
-      context: jobi[i].context,
-      start: fulldata?.startDate,
-      end: fulldata?.endDate
-    };
+  // //internship
+  // const internshipitems = internships[0].sp.steps
+  // for (let i=0; i<internshipitems.length; i++){
+  //   //let fulldata = extractDatesFromString(internshipitems[i].time);
+  //   let data = {
+  //     id: i,
+  //     companyname: internshipitems[i].step,
+  //     position: internshipitems[i].position,
+  //     context:internshipitems[i].context,
+  //     time: internshipitems[i].time,
+  //   };
+  //   const docRef = await addDoc(collection(db, 'exprience_inter'), data);
+  //   console.log("@internship Document written with ID: ", docRef.id);
+  // }
+  // //job
+  // const jobi = jobs[0].sp.steps;
+  // for (let i=0; i<jobi.length; i++){
+  //   let fulldata = extractDatesFromString(jobi[i].time);
+  //   let data = {
+  //     id: i,
+  //     companyname:jobi[i].step,
+  //     position: jobi[i].position,
+  //     context: jobi[i].context,
+  //     start: fulldata?.startDate,
+  //     end: fulldata?.endDate
+  //   };
 
-    const docRef = await addDoc(collection(db, 'experience_jobs'), data);
-    console.log("@job Document written with ID: ", docRef.id);
-  }
-  //award
-  for(let i=0; i<certified.length; i++){
-    const docRef = await addDoc(collection(db, 'award'), certified[i]);
-    console.log("@award Document written with ID: ", docRef.id);
-  }
-  //licenses
-  for(let i=0; i<licenses.length; i++){
-    const docRef = await addDoc(collection(db, 'licenses'), licenses[i]);
-    console.log("@licenses Document written with ID: ", docRef.id);
-  }
+  //   const docRef = await addDoc(collection(db, 'experience_jobs'), data);
+  //   console.log("@job Document written with ID: ", docRef.id);
+  // }
+  // //award
+  // for(let i=0; i<certified.length; i++){
+  //   const docRef = await addDoc(collection(db, 'award'), certified[i]);
+  //   console.log("@award Document written with ID: ", docRef.id);
+  // }
+  // //licenses
+  // for(let i=0; i<licenses.length; i++){
+  //   const docRef = await addDoc(collection(db, 'licenses'), licenses[i]);
+  //   console.log("@licenses Document written with ID: ", docRef.id);
+  // }
 
 
 }

@@ -1,4 +1,4 @@
-import { doc, updateDoc, deleteDoc, getDoc, collection, addDoc } from '@firebase/firestore';
+import { doc, updateDoc, deleteDoc, getDoc, collection, addDoc, getDocs } from '@firebase/firestore';
 import { Firestore, DocumentData } from "@firebase/firestore";
 
 
@@ -26,6 +26,15 @@ export class FirestoreService {
             console.debug(`@${this.dbname} No such document!`);
             return null;
         }
+    }
+
+    async readall(): Promise<DocumentData | null>{
+        let rdata: Array<DocumentData | null> = [];
+        const querySnapshot = await getDocs(collection(this.db, "cities"));
+        querySnapshot.forEach((doc) => {
+          rdata.push(doc.data());
+        });
+        return rdata;
     }
 
     async update(docId: string, newData: DocumentData): Promise<void> {
