@@ -7,5 +7,6 @@ export interface IApplicatInfromation {
     attachments?: {
         filename: string,
         link: string
-    }
+    },
+    type: string
 }

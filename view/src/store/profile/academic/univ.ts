@@ -14,7 +14,7 @@ interface Ipaper {
 export const paper: Array<Ipaper> = [
     {
         id: 2,
-        auther: "Wataru Onodera, Nobuyuki Hara, Shiho Aoki, Toru Asahi, Naoya Sawamura",
+        auther: "Wataru Onodera, Nobuyuki Hara, *Shiho Aoki*, Toru Asahi, Naoya Sawamura",
         title: " Data on the solution and processing time reached when constructing a phylogenetic tree using a quantum-inspired computer",
         date: "2023",
         publicedBy: "Data in Brief",
@@ -24,7 +24,7 @@ export const paper: Array<Ipaper> = [
     },
     {
         id: 1,
-        auther: "Wataru Onodera, Nobuyuki Harab, Shiho Aoki, Toru Asahia, Naoya Sawamura",
+        auther: "Wataru Onodera, Nobuyuki Harab, *Shiho Aoki*, Toru Asahia, Naoya Sawamura",
         title: "Phylogenetic tree reconstruction via graph cut presented using a quantum-inspired computer",
         date: "2023",
         publicedBy: "Molecular Phylogenetics and Evolution",
@@ -42,7 +42,7 @@ export const schools: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = [
                 step: "Waseda University Honjo Senior High School",
                 position: "general cource",
                 context: "",
-                time: "2016.04-2019.03",
+                time: "2016.04-2019.03"
                 },
                 {
                 step: "Waseda University",
