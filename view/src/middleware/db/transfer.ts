@@ -1,6 +1,5 @@
 import { db } from '../connector';
-import { doc, setDoc } from '@firebase/firestore';
-import { collection, addDoc, getDocs, QuerySnapshot, DocumentData, Timestamp } from "@firebase/firestore";
+import { collection, addDoc } from "@firebase/firestore";
 
 
 import { paper, schools } from '../../store/profile/academic/univ';
