@@ -11,15 +11,6 @@ interface Ipaper {
     doi: string,
 }
 
-interface IConf {
-    id: number,
-    presenter: string,
-    title: string,
-    date: string,
-    conferenceName: string,
-    posterID: string
-}
-
 export const paper: Array<Ipaper> = [
     {
         id: 2,
@@ -42,8 +33,6 @@ export const paper: Array<Ipaper> = [
         doi: "https://doi.org/10.1016/j.ympev.2022.107636",
     },
 ]
-
-export const conference: Array<IConf> = []
 
 export const schools: Array<{sp: ISetpPanel, cp: Array<IContentesPanel>}> = [
     {
