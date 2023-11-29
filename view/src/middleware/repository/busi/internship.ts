@@ -1,11 +1,11 @@
-import { db } from '../connector';
-import { FirestoreService } from '../db/service';
-import { model } from '../db/model';
+import { db } from '../../connector';
+import { FirestoreService } from '../../db/service';
+import { model } from '../../db/model';
 
 import { DocumentData } from "@firebase/firestore";
 
-export const getAllPaper = async() => {
-    const dpaper = new FirestoreService(db, model.acad.paper.name);
+export const getAllIntern = async() => {
+    const dpaper = new FirestoreService(db, model.busi.internship.name);
     const res = await dpaper.readall();
     if(res==null) return null;
 
