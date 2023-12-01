@@ -93,63 +93,6 @@
       </span>
     </div>
   </div>
-  <!-- <div class="flex justify-center mt-10">
-    <div class="grid grid-cols-2 gap-4"> -->
-    <!-- Did not use -->
-    <!-- <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shiho-aoki&theme=github_dark"
-           class="h-auto w-full object-cover object-center"/> -->
-    <!-- Did not use -->
-      <!-- <div class="col-span-2">
-        <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shiho-aoki&theme=github_dark" />
-      </div>
-      <div>
-        <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=shiho-aoki&theme=github_dark" />
-      </div>
-      <div>
-        <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=shiho-aoki&theme=github_dark&utcOffset=9" />
-      </div>
-    </div>
-  </div> -->
-  <!-- Did not use -->
-  <!-- <div class="mx-32 px-32">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shiho-aoki&count_private=true&hide=jupyter%20notebook,html,CSS,Makefile&langs_count=11&layout=compact"
-        class="h-auto w-full object-cover object-center" />
-  </div> -->
-  <!-- Did not use -->
-  <!-- <div class="bg-white py-24 sm:py-32 lg:py-40">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 content-center">
-      <div class="sm:text-center">
-        <h2 class="text-lg font-semibold leading-8 text-blue-500">skills</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">My Tech Stack</p>
-        <div class="flex justify-center mt-4">
-          <a :href="url.other.github" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.shields.io/github/followers/shiho-aoki?label=Follow&style=social" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <Skills /> -->
-  <!-- <div class="bg-white py-24 sm:py-32 lg:py-40">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 content-center">
-      <div class="sm:text-center">
-        <h2 class="text-lg font-semibold leading-8 text-blue-500">since 2017.</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Licenses and Certifications</p> -->
-        <!-- Did not use -->
-        <!-- <div class="flex justify-center mt-4">
-          <a :href="url.other.github" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.shields.io/github/followers/shiho-aoki?label=Follow&style=social" />
-          </a>
-        </div> -->
-        <!-- Did not use -->
-      <!-- </div>
-    </div>
-  </div> -->
-  <!-- <div class="justify-center mb-6 lg:mx-32 sm:mx-3">
-    <LicenssesAndCertifications />
-    <a target="_blank" href="https://icons8.com/icon/60451/twitter-(%E4%B8%B8%E5%9E%8B)">Twitter (丸型)</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-  </div> -->
-
   <Footter />
 </template>
 <script lang="ts">
