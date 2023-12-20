@@ -12,7 +12,8 @@ import { IEducation } from '../../middleware/db/interface';
 
 export default defineComponent({
   async setup (){
-    const schools = await redu.getAll() as IEducation[];
+    const schools_ = await redu.getAll() as IEducation[];
+    const schools = schools_.sort((a, b) => a.id - b.id)
     const end = ""
     return {
       schools, end

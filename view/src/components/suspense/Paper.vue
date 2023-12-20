@@ -17,7 +17,7 @@
      const paper =  await rpaper.getAll();
      console.log('paper', paper);
      return {
-       paper
+      paper
      }
    },
    name: 'PaperSusp'
