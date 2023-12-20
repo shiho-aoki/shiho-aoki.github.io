@@ -18,7 +18,7 @@ export default defineComponent({
       schools, end
     }
   },
-  name: 'Education',
+  name: 'EducationSusp',
   components: {
     EducationPanel
   }

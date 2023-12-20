@@ -20,7 +20,7 @@
           </p>
           <p class="text-gray-700 text-sm flex">
             <CalendarDaysIcon class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-              {{edu.start}}-{{edu}}
+              {{edu.start}}-{{edu.end}}
           </p>
           <p class="text-gray-600 text-sm mt-2">
             {{ edu.specific }}

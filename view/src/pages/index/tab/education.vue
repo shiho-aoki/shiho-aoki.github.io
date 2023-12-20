@@ -4,25 +4,26 @@
             'rounded-xl bg-white p-3','items-center','justify-center',
             'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
         ]">
-        <!-- <Suspense>
+        <Suspense>
             <template #default>
-                <Education />
+                <EducationSusp />
             </template>
             <template #fallback>Loading...</template>
-        </Suspense> -->
+        </Suspense>
     </TabPanel>
 </template>
 
 <script lang="ts">
     import { defineComponent } from "vue";
     import { TabPanel } from '@headlessui/vue';
-    import Education from '../../../components/suspense/Education.vue';
+    import EducationSusp from '../../../components/suspense/Education.vue';
     
     export default defineComponent({
         setup (){},
         name: 'Education',
         components: {
-            Education,
+            EducationSusp,
+            TabPanel
         }
     })
 </script>

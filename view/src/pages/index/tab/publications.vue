@@ -9,7 +9,7 @@
         </div>
         <Suspense>
             <template #default>
-                <Paper />
+                <PaperSusp />
             </template>
             <template #fallback>Loading...</template>
         </Suspense>
@@ -19,14 +19,14 @@
 <script lang="ts">
     import { defineComponent } from "vue";
     import { TabPanel } from '@headlessui/vue'
-    import Paper from '../../../components/suspense/Paper.vue';
+    import PaperSusp from '../../../components/suspense/Paper.vue';
 
     export default defineComponent({
         setup (){},
         name: 'Publications',
         components: {
             TabPanel,
-            Paper,
+            PaperSusp,
         }
     })
 </script>

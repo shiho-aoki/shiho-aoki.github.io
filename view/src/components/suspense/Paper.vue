@@ -20,7 +20,7 @@
        paper
      }
    },
-   name: 'Paper'
+   name: 'PaperSusp'
  });
  </script>
  
