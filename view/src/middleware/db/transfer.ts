@@ -2,46 +2,46 @@ import { db } from '../connector';
 import { collection, addDoc } from "@firebase/firestore";
 
 
-import { paper, schools } from '../../store/profile/academic/univ';
-import { internships } from '../../store/profile/business/internship';
-import { jobs } from '../../store/profile/business/jobs';  
-import { certified } from '../../store/profile/certifications';
-import { licenses } from '../../store/profile/licenses';
+// import { paper, schools } from '../../store/profile/academic/univ';
+// import { internships } from '../../store/profile/business/internship';
+// import { jobs } from '../../store/profile/business/jobs';  
+// import { certified } from '../../store/profile/certifications';
+// import { licenses } from '../../store/profile/licenses';
 
 // 文字列から開始日と終了日を取り出す関数
-function extractDatesFromString(str: string) {
-  const datePattern = /(\d{4}\.\d{2})-(\d{4}\.\d{2})/;
-  const match = str.match(datePattern);
+// function extractDatesFromString(str: string) {
+//   const datePattern = /(\d{4}\.\d{2})-(\d{4}\.\d{2})/;
+//   const match = str.match(datePattern);
 
-  if (match) {
-    return { startDate: match[1], endDate: match[2] };
-  } else {
-    const dataPattern2 =  /(\d{4}\.\d{2})-present/;
-    const match2 = str.match(dataPattern2);
-    if(match2){
-      return { startDate: match2[1], endDate:null }
-    }
-    return null;
-  }
-}
+//   if (match) {
+//     return { startDate: match[1], endDate: match[2] };
+//   } else {
+//     const dataPattern2 =  /(\d{4}\.\d{2})-present/;
+//     const match2 = str.match(dataPattern2);
+//     if(match2){
+//       return { startDate: match2[1], endDate:null }
+//     }
+//     return null;
+//   }
+// }
 
 
-export const transferNewDataSets = async() => {
-  //paper
-  for (let i=0; i<paper.length; i++){
-    let data = {
-      id: paper[i].id,
-      author: paper[i].auther,
-      title: paper[i].title,
-      date: paper[i].date,
-      publishedBy: paper[i].publicedBy,
-      edition: paper[i].edition,
-      number: paper[i].number,
-      doi: paper[i].doi
-    }
-    const docRef = await addDoc(collection(db, "paper"), data);
-    console.log("@paper Document written with ID: ", docRef.id);
-  }
+// export const transferNewDataSets = async() => {
+//   //paper
+//   for (let i=0; i<paper.length; i++){
+//     let data = {
+//       id: paper[i].id,
+//       author: paper[i].auther,
+//       title: paper[i].title,
+//       date: paper[i].date,
+//       publishedBy: paper[i].publicedBy,
+//       edition: paper[i].edition,
+//       number: paper[i].number,
+//       doi: paper[i].doi
+//     }
+//     const docRef = await addDoc(collection(db, "paper"), data);
+//     console.log("@paper Document written with ID: ", docRef.id);
+//   }
   
   // //conference
   // const docRef = await addDoc(collection(db, "conference"), {
@@ -166,4 +166,4 @@ export const transferNewDataSets = async() => {
   // }
 
 
-}
+// }

@@ -23,15 +23,15 @@
         </span>
         <span class="mt-2 flex text-sm">
           <span class="ml-3 inline-flex items-center">
-            <a :href="url.other.github">
+            <a :href="_url.other.github">
             <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white ml-2"
                   src="../../assets/img/sns/github.png" alt="GitHub" />
             </a>
-            <a :href="url.other.linkedin">
+            <a :href="_url.other.linkedin">
             <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white ml-2"
                   src="../../assets/img/sns/linkedin.png" alt="LinkedIn" />
             </a>
-            <a :href="url.other.qiita">
+            <a :href="_url.other.qiita">
             <img class="inline-block h-8 w-8 rounded-full ring-2 ring-white ml-2"
                   src="../../assets/img/sns/qiita.png" alt="Quita" />
             </a>
@@ -40,13 +40,13 @@
       </h2>
       <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
         <div class="inline-flex rounded-md shadow">
-          <a :href="url.profile.academic" class="inline-flex items-center justify-center rounded-md border border-transparent bg-blue-500 px-5 py-3 text-base font-medium text-white hover:bg-blue-600">
+          <a :href="_url.profile.academic" class="inline-flex items-center justify-center rounded-md border border-transparent bg-blue-500 px-5 py-3 text-base font-medium text-white hover:bg-blue-600">
             >> Academic <br>
             (Researcher Profile)
           </a>
         </div>
         <div class="ml-3 inline-flex rounded-md shadow">
-          <a :href="url.profile.business" class="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-blue-500 hover:bg-blue-50">
+          <a :href="_url.profile.business" class="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-blue-500 hover:bg-blue-50">
             >> Business <br>
             (Engineer Profile)
           </a>
@@ -59,10 +59,10 @@
     <div class="px-4">
       <span class="mt-2 max-w-2xl text-xl leading-8 text-gray-600">
         <div class="py-0 sm:px-0">
-          <TabGroup>
+          <TabGroup manual>
             <TabList class="flex space-x-2 rounded-xl bg-blue-900/20 p-1">
               <Tab
-                v-for="category in Object.keys(categories)"
+                v-for="category in _categories"
                 as="template"
                 :key="category"
                 v-slot="{ selected }"
@@ -99,7 +99,7 @@
 import Header from '../../components/Header.vue';
 import Footter from '../../components/Footter.vue';
 import { urls } from '../../store/urls';
-import { myprofile } from '../../store/profile/myprofile';
+import { categories } from '../../store/setting';
 import { ref } from 'vue';
 import { TagIcon } from '@heroicons/vue/24/outline';
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '@headlessui/vue'
@@ -114,11 +114,11 @@ import Community from './tab/community.vue';
 export default {
   name: 'Profile',
   setup(){
-    const url = ref(urls);
-    const categories = ref(myprofile);
+    const _url = ref(urls);
+    const _categories = ref(categories);
     return {
-      url,
-      categories
+      _url,
+      _categories
     }
   },
   components: {
