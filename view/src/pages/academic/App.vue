@@ -25,8 +25,8 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import Header from '../../components/Header.vue';
-import Paper from '../../components/suspense/Paper.vue';
-import Education from '../../components/suspense/Education.vue';
+import Paper from '../../components/suspense/acad/Paper.vue';
+import Education from '../../components/suspense/acad/Education.vue';
 
 export default defineComponent({
   setup (){},

@@ -10,12 +10,11 @@
  
  <script lang="ts">
  import { defineComponent } from "vue";
- import { rpaper } from '../../middleware/repository' ;
+ import { rpaper } from '../../../middleware/repository' ;
  
  export default defineComponent({
    async setup (){
      const paper =  await rpaper.getAll();
-     console.log('paper', paper);
      return {
       paper
      }

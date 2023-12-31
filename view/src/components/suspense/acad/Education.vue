@@ -5,15 +5,14 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
-import EducationPanel from "../core/EducationPanel.vue";
-import { redu } from '../../middleware/repository' ;
-import { IEducation } from '../../middleware/db/interface';
+import EducationPanel from "../../core/EducationPanel.vue";
+import { redu } from '../../../middleware/repository' ;
+import { IEducation } from '../../../middleware/db/interface';
 
 
 export default defineComponent({
   async setup (){
-    const schools_ = await redu.getAll() as IEducation[];
-    const schools = schools_.sort((a, b) => a.id - b.id)
+    const schools = await redu.getAll() as IEducation[];
     const end = ""
     return {
       schools, end

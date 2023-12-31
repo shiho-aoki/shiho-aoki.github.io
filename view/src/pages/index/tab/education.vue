@@ -16,7 +16,7 @@
 <script lang="ts">
     import { defineComponent } from "vue";
     import { TabPanel } from '@headlessui/vue';
-    import EducationSusp from '../../../components/suspense/Education.vue';
+    import EducationSusp from '../../../components/suspense/acad/Education.vue';
     
     export default defineComponent({
         setup (){},

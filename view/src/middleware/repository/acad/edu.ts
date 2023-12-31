@@ -10,8 +10,5 @@ export const getAllEdu = async() => {
     if(res==null) return null;
 
     let r = res as Array<DocumentData>;
-    return r.sort(
-        (firstObject: DocumentData, secondObject: DocumentData) =>
-            (firstObject.id > secondObject.id) ? -1 : 1
-    );
+    return r.sort((a, b) => a.id - b.id);
 }
