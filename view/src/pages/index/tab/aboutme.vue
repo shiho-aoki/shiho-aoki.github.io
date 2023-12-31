@@ -5,7 +5,7 @@
             'ring-white ring-opacity-60 ring-offset-2 focus:outline-none',
         ]">
         <span class="text-gray-500">
-            * Doctoral Student at Waseda University(Molecular Evolution / Biophysical Engineering), <br />
+            * Ph.D. Student at Waseda University(Molecular Evolution / Biophysical Engineering), <br />
             * Systems Engineer, Product Manager, Chief Technology Officer@IATD.Co.,Ltd.
         </span>
 

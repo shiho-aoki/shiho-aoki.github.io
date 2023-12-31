@@ -6,7 +6,7 @@
       <h2 class="text-3xl tracking-tight text-gray-900 sm:text-4xl">
         <span class="block">shiho aoki</span>
         <h3 class="mt-2 flex text-sm text-gray-500">
-          Doctor-s Degree, Biomedical Engineering @ Waseda University, Japan<br />
+          Ph.D. Student, Biomedical Engineering @ Waseda University, Japan<br />
           IATD. Co., Ltd. Chief Technology Officer<br />
           ---<br />
           早稲田大学先進理工学研究科 一貫制博士課程<br />
