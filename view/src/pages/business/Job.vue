@@ -1,11 +1,10 @@
 <template>
-  <div v-for="job in jobs">
-    <!-- <StepPanel :stepsdata="job.sp" :achivedata="job.cp" /> -->
+  <!-- <div v-for="job in jobs">
     <StepPanel :stepsdata="job.sp" />
-  </div>
+  </div> -->
 </template>
 
 <script setup lang="ts">
 import StepPanel from "../../components/StepPanel.vue";
-import { jobs } from "@/store/profile/business/jobs";
+// import { jobs } from "@/store/profile/business/jobs";
 </script>

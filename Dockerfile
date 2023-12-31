@@ -10,3 +10,4 @@ COPY ./view/package.json /usr/app/view/package.json
 
 WORKDIR /usr/app/view
 RUN yarn install --non-interactive --frozen-lockfile
+RUN npm config set save-exact true
